@@ -286,3 +286,148 @@ Received Import Request.
 Start importing Assets/Scripts/GameDatabase.cs using Guid(eb8b1b9c80db01842adf30a00b5945e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f650ddc183e573114303077aaf728ff3') in 0.002124 seconds 
   Import took 0.005628 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 236.325398 seconds.
+  path: Assets/Prefabs/Rooms
+  artifactKey: Guid(10c0f7165198e4244aebc1c988ee0cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms using Guid(10c0f7165198e4244aebc1c988ee0cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '060984a3a782cdd8feff2a484cd39c55') in 0.007077 seconds 
+  Import took 0.009850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Prefabs/Rooms
+  artifactKey: Guid(10c0f7165198e4244aebc1c988ee0cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms using Guid(10c0f7165198e4244aebc1c988ee0cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '060984a3a782cdd8feff2a484cd39c55') in 0.002852 seconds 
+  Import took 0.005518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.079853 seconds.
+  path: Assets/Prefabs/Rooms/BrainRoom.prefab
+  artifactKey: Guid(b79abcb9ee326264694320b336aa66c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/BrainRoom.prefab using Guid(b79abcb9ee326264694320b336aa66c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a8f7709b33fe2ba892e4aac97db23e4') in 0.134005 seconds 
+  Import took 0.137611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Prefabs/Rooms/HeartRoom.prefab
+  artifactKey: Guid(b9c7f73cbb9617a4c82234a257216bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/HeartRoom.prefab using Guid(b9c7f73cbb9617a4c82234a257216bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d73f35e9d2614672fcafb47d5e155f') in 0.058390 seconds 
+  Import took 0.061386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Prefabs/Rooms/CorridorV.prefab
+  artifactKey: Guid(21a463888965eb14ea0abb606bdbca2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/CorridorV.prefab using Guid(21a463888965eb14ea0abb606bdbca2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '691253303c7e1d694e96ac5247ee648b') in 0.041771 seconds 
+  Import took 0.044683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Prefabs/Rooms/CorridorMedium.prefab
+  artifactKey: Guid(905396a8b049c0548828753382b185ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/CorridorMedium.prefab using Guid(905396a8b049c0548828753382b185ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30c2ff8df145853fc8d22d4fba3d4114') in 0.043275 seconds 
+  Import took 0.047113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Prefabs/Rooms/StomachRoom.prefab
+  artifactKey: Guid(4cbb64337ca003c4d831290a0e9f461e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/StomachRoom.prefab using Guid(4cbb64337ca003c4d831290a0e9f461e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9520a863f7480b29456bedf1a5d66cc1') in 0.057086 seconds 
+  Import took 0.061254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Prefabs/Rooms/CorridorCube.prefab
+  artifactKey: Guid(0ad9d83713f843f4a8daec984ea1f0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/CorridorCube.prefab using Guid(0ad9d83713f843f4a8daec984ea1f0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68fd992ff1cc88a799c182d5eb4abc8a') in 0.043805 seconds 
+  Import took 0.047532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Prefabs/Rooms/CorridorLong.prefab
+  artifactKey: Guid(b839185e8530797479d5b4df13785446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/CorridorLong.prefab using Guid(b839185e8530797479d5b4df13785446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd51fab0658fbfb1abc0b74a6bdae962c') in 0.041242 seconds 
+  Import took 0.045144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Prefabs/Rooms/CorridorCorner.prefab
+  artifactKey: Guid(0cd31afd7f54bbc4183a5847d566e3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/CorridorCorner.prefab using Guid(0cd31afd7f54bbc4183a5847d566e3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712b5beb4aca6292c119cc3197b0eecd') in 0.041221 seconds 
+  Import took 0.044148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.422922 seconds.
+  path: Assets/Art/Models/Props/FatTunnel.fbx
+  artifactKey: Guid(ab43908e424327343969e234002969b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Models/Props/FatTunnel.fbx using Guid(ab43908e424327343969e234002969b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650de7b43c684c3663f69fd4fd78382d') in 0.077833 seconds 
+  Import took 0.081736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Art/Models/Weapons/GermOBlaster.fbx
+  artifactKey: Guid(86fc001a05862c84693b67471a4668be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Models/Weapons/GermOBlaster.fbx using Guid(86fc001a05862c84693b67471a4668be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53582a5e20b3b4560c78c21267e2da7d') in 0.248635 seconds 
+  Import took 0.251763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Art/Models/Props/FatTunnel.fbx
+  artifactKey: Guid(ab43908e424327343969e234002969b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Models/Props/FatTunnel.fbx using Guid(ab43908e424327343969e234002969b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650de7b43c684c3663f69fd4fd78382d') in 0.028516 seconds 
+  Import took 0.032193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Art/Models/Props/FatSide.fbx
+  artifactKey: Guid(bab677009a8f2314cac1510aafaf8a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Models/Props/FatSide.fbx using Guid(bab677009a8f2314cac1510aafaf8a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf8eccb06fa19f8f46ab3ccf6b7265a1') in 0.031058 seconds 
+  Import took 0.034405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Art/Models/Weapons/Healmatic500.fbx
+  artifactKey: Guid(0cf6f9b9d11e99b418e19719c03665f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Models/Weapons/Healmatic500.fbx using Guid(0cf6f9b9d11e99b418e19719c03665f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7d8409fe95d458fe73d9e5c79f9b8c') in 0.105857 seconds 
+  Import took 0.109814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Art/Animations/Enemies/GermSlime/GermSlime@Idle.fbx
+  artifactKey: Guid(fc0abf94747c84340bd09191e02e88d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animations/Enemies/GermSlime/GermSlime@Idle.fbx using Guid(fc0abf94747c84340bd09191e02e88d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '228889d82bd229b5f205e6025d659963') in 0.053244 seconds 
+  Import took 0.056460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Art/Animations/Weapons/Healmatic500/Healmatic500Animations.fbx
+  artifactKey: Guid(48d0d593c4a87604d8229843efb1af29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animations/Weapons/Healmatic500/Healmatic500Animations.fbx using Guid(48d0d593c4a87604d8229843efb1af29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19c686370b46b8bd14c6df16a6353d4d') in 0.088095 seconds 
+  Import took 0.091512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Art/Models/Environment/StomachRoom.fbx
+  artifactKey: Guid(2f61df2460680474caed9ba40e544b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Models/Environment/StomachRoom.fbx using Guid(2f61df2460680474caed9ba40e544b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315b482fc6ecdd05368707d8cc5ca284') in 0.112329 seconds 
+  Import took 0.115295 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
