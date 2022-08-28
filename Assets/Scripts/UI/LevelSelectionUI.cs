@@ -100,12 +100,13 @@ public class LevelSelectionUI : MonoBehaviour
             b.gameObject.SetActive(true);
         }
     }
-
-    void OpenEpisode(int i)
+    
+   
+    void OpenEpisode(int i)    
     {
         BackButton.onClick.RemoveAllListeners();
         BackButton.onClick.AddListener(BackToEpisode);
-        
+      
         foreach (RectTransform t in ButtonListPlace)
         {
             t.gameObject.SetActive(false);
