@@ -44,11 +44,11 @@ public class LevelSelectionUI : MonoBehaviour
 
             for (int j = 0; j < ep.scenes.Length; ++j)
             {
-                Button levelB = Instantiate(ButtonPrefab);
-                t = levelB.GetComponentInChildren<Text>();
+                Button levelButton = Instantiate(ButtonPrefab);
+                t = levelButton.GetComponentInChildren<Text>();
 
                 var j1 = j;
-                levelB.onClick.AddListener(() =>
+                levelButton.onClick.AddListener(() =>
                 {
 #if UNITY_EDITOR
                     EditorSceneManager.LoadSceneInPlayMode(ep.scenes[j1], new LoadSceneParameters());
@@ -59,8 +59,8 @@ public class LevelSelectionUI : MonoBehaviour
 
                 t.text = $"Level {j + 1}";
                 
-                levelB.transform.SetParent(ButtonListPlace);
-                m_LevelButtons[i].Add(levelB);
+                levelButton.transform.SetParent(ButtonListPlace);
+                m_LevelButtons[i].Add(levelButton);
             }
         }
     }
