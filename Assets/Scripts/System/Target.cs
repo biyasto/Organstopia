@@ -47,7 +47,7 @@ public class Target : MonoBehaviour
 
         Vector3 position = transform.position;
         
-        //the audiosource of the target will get destroyed, so we need to grab a world one and play the clip through it
+        //the audio source of the target will get destroyed, so we need to grab a world one and play the clip through it
         if (HitPlayer != null)
         {
             var source = WorldAudioPool.GetWorldSFXSource();

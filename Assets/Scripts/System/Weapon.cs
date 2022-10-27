@@ -81,6 +81,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
+        
     public WeaponState CurrentState => m_CurrentState;
     public int ClipContent => m_ClipContent;
     public Controller Owner => m_Owner;

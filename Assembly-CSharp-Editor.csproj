@@ -307,6 +307,9 @@
  <Reference Include="UnityEditor.Lumin.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="Jint">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Assets/Plugins/Jint/Jint.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/PackageCache/com.unity.analytics@3.5.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
@@ -321,6 +324,9 @@
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/PackageCache/com.unity.analytics@3.5.3/Unity.Analytics.Tracker.dll</HintPath>
+ </Reference>
+ <Reference Include="BouncyCastle.Crypto">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Assets/Plugins/BouncyCastle.Crypto.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
@@ -771,6 +777,10 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{0acabd05-5b62-abea-59c7-0dfa0bcaf9b5}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{db8e16fb-c57a-3f83-afb4-11a08a957a07}</Project>
       <Name>Assembly-CSharp</Name>
