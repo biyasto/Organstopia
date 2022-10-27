@@ -27,7 +27,7 @@ public class FullscreenMap : MonoBehaviour
         m_RT = new RenderTexture(Resolution, Mathf.FloorToInt(Resolution * m_Ratio), 16, RenderTextureFormat.ARGB32);
         MapImageTarget.texture = m_RT;
     }
-
+    
     public void UpdateForPlayerTransform(Transform playerTransform)
     {
         MinimapSystem.Render(m_RT, playerTransform.position, playerTransform.forward, MinimapSystemSettings);

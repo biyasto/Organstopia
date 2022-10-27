@@ -52,24 +52,58 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20SymbolExample.cs" />
      <Compile Include="Assets\Scripts\Effects\TextAmmoDisplay.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721URIExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer721.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSignMessageExample.cs" />
      <Compile Include="Assets\Scripts\System\AmmoBox.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721OwnerOfExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC1155\ERC1155BalanceOfExample.cs" />
      <Compile Include="Assets\Scripts\UI\WeaponInfoUI.cs" />
      <Compile Include="Assets\Scripts\UI\MinimapUI.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Scenes\WalletLogin.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer721Example.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20DecimalsExample.cs" />
      <Compile Include="Assets\Scripts\Helpers.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSendTransactionExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Library\EVM.cs" />
      <Compile Include="Assets\Scripts\System\Target.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Scenes\WebLogin.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721BalanceOfExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\VerifyExample.cs" />
      <Compile Include="Assets\Scripts\GradientTexture.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\AllErc1155Example.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC1155\ERC1155URIExample.cs" />
      <Compile Include="Assets\Scripts\Effects\LiquidContainer.cs" />
      <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Minimap\MinimapSystem.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySignMessageExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Minter\Model\CreateMintModel.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignOut.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20TotalSupplyExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSha3Example.cs" />
      <Compile Include="Assets\Scripts\Effects\CameraShaker.cs" />
      <Compile Include="Assets\Scripts\LevelLayout\LevelRoomGroup.cs" />
+     <Compile Include="Assets\Web3Unity\Prefabs\ERC1155\ImportNFTTextureExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CustomRPCExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSha3Example.cs" />
      <Compile Include="Assets\Scripts\System\Projectile.cs" />
      <Compile Include="Assets\Scripts\System\PoolSystem.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySend20Example.cs" />
      <Compile Include="Assets\Scripts\KeyLockSystem\Lock.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer1155.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\BlockNumberExample.cs" />
      <Compile Include="Assets\Scripts\TriggerActionsSystem\EnableObjectAction.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySendTransactionExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\TxStatus.cs" />
      <Compile Include="Assets\Scripts\Audio\WorldAudioPool.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CustomCallExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Library\Web3Wallet.cs" />
      <Compile Include="Assets\Scripts\Audio\UIAudioPlayer.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer20Example.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer20.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer1155Example.cs" />
      <Compile Include="Assets\Scripts\TriggerActionsSystem\TargetChecker.cs" />
      <Compile Include="Assets\Scripts\Minimap\MinimapElement.cs" />
      <Compile Include="Assets\Scripts\KeyLockSystem\Keychain.cs" />
@@ -79,22 +113,46 @@
      <Compile Include="Assets\Scripts\Effects\LiquidAmmoDisplay.cs" />
      <Compile Include="Assets\Scripts\TriggerActionsSystem\DissolveAction.cs" />
      <Compile Include="Assets\Scripts\UI\FullscreenMap.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Minter\MintWebGL.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySend721Example.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\EthBalanceOfExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSendTransactionExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletLogOut.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\AllErc721Example.cs" />
      <Compile Include="Assets\Scripts\GameDatabase.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Library\ERC1155.cs" />
      <Compile Include="Assets\Scripts\Audio\RandomPlayer.cs" />
      <Compile Include="Assets\Scripts\TriggerActionsSystem\GameAction.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignMessageExample.cs" />
      <Compile Include="Assets\Scripts\TriggerActionsSystem\MovingAction.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Library\ERC20.cs" />
      <Compile Include="Assets\Scripts\System\Controller.cs" />
      <Compile Include="Assets\Scripts\LevelLayout\LevelRoom.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Minter\MintPK.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC1155\ERC1155BalanceOfBatchExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20NameExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Library\Web3PrivateKey.cs" />
      <Compile Include="Assets\Scripts\Effects\ImpactManager.cs" />
      <Compile Include="Assets\Scripts\System\WeaponAnimationEventHandler.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySend1155Example.cs" />
      <Compile Include="Assets\Scripts\System\TargetSpawner.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Library\ERC721.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignVerifyExample.cs" />
      <Compile Include="Assets\Scripts\UI\FinalScoreUI.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeyAddressExample.cs" />
      <Compile Include="Assets\Scripts\UI\LevelSelectionUI.cs" />
      <Compile Include="Assets\Scripts\UI\RestartLevel.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Library\WebGL\Web3GL.cs" />
      <Compile Include="Assets\Scripts\System\GameSystem.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721OwnerOfBatchExample.cs" />
      <Compile Include="Assets\Scripts\System\Weapon.cs" />
      <Compile Include="Assets\Scripts\LevelLayout\LevelLayout.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20BalanceOfExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSendContractExample.cs" />
      <Compile Include="Assets\Scripts\System\StartCheckpoint.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CreateContractDataExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Minter\MintWeb3Wallet.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
      <None Include="Assets\Art\Shaders\Acid.shader" />
      <None Include="Assets\Art\Shaders\Brain.shader" />
      <None Include="Assets\Art\Shaders\Fleisch.shader" />
@@ -327,6 +385,9 @@
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
+ <Reference Include="Jint">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Assets/Plugins/Jint/Jint.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/PackageCache/com.unity.analytics@3.5.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
@@ -335,6 +396,9 @@
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/PackageCache/com.unity.analytics@3.5.3/Unity.Analytics.Tracker.dll</HintPath>
+ </Reference>
+ <Reference Include="BouncyCastle.Crypto">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Assets/Plugins/BouncyCastle.Crypto.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
@@ -770,6 +834,10 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{0acabd05-5b62-abea-59c7-0dfa0bcaf9b5}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
