@@ -38,6 +38,9 @@ public class GameDatabase : ScriptableObject
         };
     }
 
+    //delete
+    
+   
     static BuildPlayerOptions HandleBuild(BuildPlayerOptions opts)
     {
         opts = BuildPlayerWindow.DefaultBuildMethods.GetBuildPlayerOptions(opts);
