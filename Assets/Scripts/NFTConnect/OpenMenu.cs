@@ -9,8 +9,8 @@ using UnityEngine.SceneManagement;
 
 public class OpenMenu : MonoBehaviour
 {
-    static public List<bool> CharacterOwn  = new List<bool>();
-    bool[] character= new bool[5];
+    static public List<bool> WeaponOwn  = new List<bool>();
+    bool[] weapons= new bool[3];
     public TextMeshProUGUI address;
     // Start is called before the first frame update
     
@@ -21,14 +21,11 @@ public class OpenMenu : MonoBehaviour
 
     void  SaveData()
     {
+        weapons[0]=gameObject.GetComponent<CheckFireBalance>().have;
+        weapons[1]=gameObject.GetComponent<CheckPieceBalance>().have;
+        weapons[2]=gameObject.GetComponent<CheckUnicellBalance>().have;
         
-        character[0]=gameObject.GetComponent<CheckBotBalance>().have;
-        character[1]=gameObject.GetComponent<CheckEntBalance>().have;
-        character[2]=gameObject.GetComponent<CheckFireBalance>().have;
-        character[3]=gameObject.GetComponent<CheckPieceBalance>().have;
-        character[4]=gameObject.GetComponent<CheckUnicellBalance>().have;
-        
-        CharacterOwnedData.SetData(character[0],character[1],character[2],character[3],character[4]);
+        WeaponsOwnedData.SetData(weapons[0],weapons[1],weapons[2]);
 
     }
     
@@ -44,7 +41,7 @@ public class OpenMenu : MonoBehaviour
         bool isPlayAble=false;
         for (int i = 0; i < 5; i++)
         {
-            if (character[i] == true) {isPlayAble = true;
+            if (weapons[i] == true) {isPlayAble = true;
                 break;
             }
         }

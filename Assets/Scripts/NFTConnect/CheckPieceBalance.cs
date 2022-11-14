@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CheckPieceBalance : MonoBehaviour
 {
+    //xoa so 1 o cuoi
     private string tokenId = "38943131031766143704984983154691040388593436270428817556432674371969939931146";
     private string contract = "0x2953399124F0cBB46d2CbACD8A89cF0599974963";
     public  bool have;

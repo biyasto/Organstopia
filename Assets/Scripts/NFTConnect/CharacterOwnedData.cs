@@ -5,19 +5,18 @@ using UnityEngine;
 namespace NFTConnect
 {
     
-    public static class CharacterOwnedData
+    public static class WeaponsOwnedData
     {
-        public static List<bool> CharacterOwn = new List<bool>();
+        public static List<bool> WeaponOwn = new List<bool>();
 
-        public static void SetData(bool char0, bool char1, bool char2, bool char3, bool char4)
+        public static void SetData(bool wep0, bool wep1, bool wep2)
         {
-            CharacterOwn.Clear();
+            WeaponOwn.Clear();
            
-                CharacterOwn.Add(char0);  Debug.Log("save data bot"+char0); 
-                CharacterOwn.Add(char1); Debug.Log("save data ent"+char1); 
-                CharacterOwn.Add(char2); Debug.Log("save data fire"+char2); 
-                CharacterOwn.Add(char3); Debug.Log("save data piece"+char3); 
-                CharacterOwn.Add(char4); Debug.Log("save data unicell"+char4); 
+            WeaponOwn.Add(wep0);  Debug.Log("save data weapon 0"+wep0); 
+            WeaponOwn.Add(wep1); Debug.Log("save data weapon 1"+wep1); 
+            WeaponOwn.Add(wep2); Debug.Log("save data weapon 2"+wep2); 
+               
 
         }
       
