@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637959091243268025
-    m_Hash: 260421731
+      ticks: 638043488681401749
+    m_Hash: 3067630282
   m_LockFileStatus:
     m_FilePath: C:/Users/ROG/RiderProjects/Organstopia/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637959091284710268
-    m_Hash: 3408702447
+      ticks: 638043488681497012
+    m_Hash: 1708731186
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -121,6 +121,273 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
+    - packageId: com.unity.addressables@1.16.19
+      testable: 0
+      isDirectDependency: 1
+      version: 1.16.19
+      source: 1
+      resolvedPath: C:\Users\ROG\RiderProjects\Organstopia\Library\PackageCache\com.unity.addressables@1.16.19
+      assetPath: Packages/com.unity.addressables
+      name: com.unity.addressables
+      displayName: Addressables
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: asset
+      description: 'The Addressable Asset System allows the developer to ask for
+        an asset via its address. Once an asset (e.g. a prefab) is marked "addressable",
+        it generates an address which can be called from anywhere. Wherever the asset
+        resides (local or remote), the system will locate it and its dependencies,
+        then return it.
+
+
+        Use ''Window->Asset Management->Addressables''
+        to begin working with the system.
+
+
+        Addressables use asynchronous
+        loading to support loading from any location with any collection of dependencies.
+        Whether you have been using direct references, traditional asset bundles,
+        or Resource folders, addressables provide a simpler way to make your game
+        more dynamic. Addressables simultaneously opens up the world of asset bundles
+        while managing all the complexity.
+
+
+        For usage samples, see github.com/Unity-Technologies/Addressables-Sample'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.8-preview
+        - 0.0.12-preview
+        - 0.0.15-preview
+        - 0.0.16-preview
+        - 0.0.18-preview
+        - 0.0.22-preview
+        - 0.0.26-preview
+        - 0.0.27-preview
+        - 0.1.2-preview
+        - 0.2.1-preview
+        - 0.2.2-preview
+        - 0.3.5-preview
+        - 0.4.6-preview
+        - 0.4.8-preview
+        - 0.5.2-preview
+        - 0.5.3-preview
+        - 0.6.6-preview
+        - 0.6.7-preview
+        - 0.6.8-preview
+        - 0.7.4-preview
+        - 0.7.5-preview
+        - 0.8.4-preview
+        - 0.8.6-preview
+        - 1.1.3-preview
+        - 1.1.4-preview
+        - 1.1.5
+        - 1.1.7
+        - 1.1.9
+        - 1.1.10
+        - 1.2.2
+        - 1.2.3
+        - 1.2.4
+        - 1.3.3
+        - 1.3.8
+        - 1.4.0
+        - 1.5.0
+        - 1.5.1
+        - 1.6.0
+        - 1.6.2
+        - 1.7.4
+        - 1.7.5
+        - 1.8.3
+        - 1.8.4
+        - 1.8.5
+        - 1.9.2
+        - 1.10.0
+        - 1.11.2
+        - 1.12.0
+        - 1.13.1
+        - 1.14.2
+        - 1.15.1
+        - 1.16.1
+        - 1.16.6
+        - 1.16.7
+        - 1.16.8
+        - 1.16.10
+        - 1.16.12
+        - 1.16.13
+        - 1.16.15
+        - 1.16.16
+        - 1.16.19
+        - 1.17.0-preview
+        - 1.17.2-preview
+        - 1.17.4-preview
+        - 1.17.5-preview
+        - 1.17.6-preview
+        - 1.17.13
+        - 1.17.15
+        - 1.17.17
+        - 1.18.2
+        - 1.18.4
+        - 1.18.9
+        - 1.18.11
+        - 1.18.13
+        - 1.18.15
+        - 1.18.16
+        - 1.18.19
+        - 1.19.4
+        - 1.19.6
+        - 1.19.9
+        - 1.19.11
+        - 1.19.13
+        - 1.19.14
+        - 1.19.15
+        - 1.19.17
+        - 1.19.18
+        - 1.19.19
+        - 1.20.0
+        - 1.20.3
+        - 1.20.5
+        - 1.21.1
+        compatible:
+        - 0.0.8-preview
+        - 0.0.12-preview
+        - 0.0.15-preview
+        - 0.0.16-preview
+        - 0.0.18-preview
+        - 0.0.22-preview
+        - 0.0.26-preview
+        - 0.0.27-preview
+        - 0.1.2-preview
+        - 0.2.1-preview
+        - 0.2.2-preview
+        - 0.3.5-preview
+        - 0.4.6-preview
+        - 0.4.8-preview
+        - 0.5.2-preview
+        - 0.5.3-preview
+        - 0.6.6-preview
+        - 0.6.7-preview
+        - 0.6.8-preview
+        - 0.7.4-preview
+        - 0.7.5-preview
+        - 0.8.4-preview
+        - 0.8.6-preview
+        - 1.1.3-preview
+        - 1.1.4-preview
+        - 1.1.5
+        - 1.1.7
+        - 1.1.9
+        - 1.1.10
+        - 1.2.2
+        - 1.2.3
+        - 1.2.4
+        - 1.3.3
+        - 1.3.8
+        - 1.4.0
+        - 1.5.0
+        - 1.5.1
+        - 1.6.0
+        - 1.6.2
+        - 1.7.4
+        - 1.7.5
+        - 1.8.3
+        - 1.8.4
+        - 1.8.5
+        - 1.9.2
+        - 1.10.0
+        - 1.11.2
+        - 1.12.0
+        - 1.13.1
+        - 1.14.2
+        - 1.15.1
+        - 1.16.1
+        - 1.16.6
+        - 1.16.7
+        - 1.16.8
+        - 1.16.10
+        - 1.16.12
+        - 1.16.13
+        - 1.16.15
+        - 1.16.16
+        - 1.16.19
+        - 1.17.0-preview
+        - 1.17.2-preview
+        - 1.17.4-preview
+        - 1.17.5-preview
+        - 1.17.6-preview
+        - 1.17.13
+        - 1.17.15
+        - 1.17.17
+        - 1.18.2
+        - 1.18.4
+        - 1.18.9
+        - 1.18.11
+        - 1.18.13
+        - 1.18.15
+        - 1.18.16
+        - 1.18.19
+        - 1.19.4
+        - 1.19.6
+        - 1.19.9
+        - 1.19.11
+        - 1.19.13
+        - 1.19.14
+        - 1.19.15
+        - 1.19.17
+        - 1.19.18
+        - 1.19.19
+        - 1.20.0
+        - 1.20.3
+        - 1.20.5
+        - 1.21.1
+        verified: 1.16.19
+      dependencies:
+      - name: com.unity.scriptablebuildpipeline
+        version: 1.15.2
+      - name: com.unity.modules.assetbundle
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequestassetbundle
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.scriptablebuildpipeline
+        version: 1.15.2
+      - name: com.unity.modules.assetbundle
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequestassetbundle
+        version: 1.0.0
+      keywords:
+      - asset
+      - resources
+      - bundle
+      - bundles
+      - assetbundles
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 0
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637541127300000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/Addressables.git
+        revision: 409be64ae2451fbde6a6e3e6fb1d6b7a1aa9a18c
+        path: 
     - packageId: com.unity.ads@3.6.1
       testable: 0
       isDirectDependency: 1
@@ -135,7 +402,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Unity Ads is a video ad network for iOS and Android that allows
         you to quickly and effectively monetize your games.
       status: 4
@@ -188,6 +455,7 @@ m_PackageAssets:
         - 4.1.0
         - 4.2.1
         - 4.3.0
+        - 4.4.1
         compatible:
         - 0.0.3
         - 0.0.4
@@ -235,6 +503,7 @@ m_PackageAssets:
         - 4.1.0
         - 4.2.1
         - 4.3.0
+        - 4.4.1
         verified: 3.7.5
       dependencies:
       - name: com.unity.ugui
@@ -257,7 +526,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -283,7 +552,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       status: 4
@@ -389,7 +658,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -415,7 +684,7 @@ m_PackageAssets:
         email: 
         url: 
       category: Editor
-      type: 
+      type: asset
       description: The Version Control package gives you the ability to use either
         Collaborate or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic
         SCM for Unity (beta), a Plastic SCM subscription is required. Learn more
@@ -474,6 +743,8 @@ m_PackageAssets:
         - 1.17.0
         - 1.17.1
         - 1.17.2
+        - 1.17.6
+        - 1.17.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -536,7 +807,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -562,7 +833,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: The JetBrains Rider Editor package provides an integration for
         using the JetBrains Rider IDE as a code editor for Unity. It adds support
         for generating .csproj files for code completion and auto-discovery of installations.
@@ -601,6 +872,7 @@ m_PackageAssets:
         - 3.0.13
         - 3.0.14
         - 3.0.15
+        - 3.0.16
         compatible:
         - 1.0.2
         - 1.0.6
@@ -633,6 +905,7 @@ m_PackageAssets:
         - 3.0.13
         - 3.0.14
         - 3.0.15
+        - 3.0.16
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -655,7 +928,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -681,7 +954,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Code editor integration for supporting Visual Studio as code editor
         for unity. Adds support for generating csproj files for intellisense purposes,
         auto discovery of installations, etc.
@@ -750,7 +1023,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -776,7 +1049,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Code editor integration for supporting Visual Studio Code as code
         editor for unity. Adds support for generating csproj files for intellisense
         purposes, auto discovery of installations, etc.
@@ -823,7 +1096,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -849,7 +1122,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: The post-processing stack (v2) comes with a collection of effects
         and image filters you can apply to your cameras to improve the visuals of
         your games.
@@ -918,7 +1191,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -944,7 +1217,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: 'Unity IAP supports the iOS, Mac, tvOS, Google Play, Facebook
         Gameroom, Windows, Amazon, and Samsung Galaxy app stores. Additionally, it
         can work in tandem with the Unity Distribution Portal in order to synchronize
@@ -1029,6 +1302,9 @@ m_PackageAssets:
         - 4.2.1
         - 4.3.0
         - 4.4.0
+        - 4.4.1
+        - 4.5.0
+        - 4.5.1
         compatible:
         - 0.0.3
         - 0.0.4
@@ -1080,6 +1356,9 @@ m_PackageAssets:
         - 4.2.1
         - 4.3.0
         - 4.4.0
+        - 4.4.1
+        - 4.5.0
+        - 4.5.1
         verified: 3.2.3
       dependencies:
       - name: com.unity.ugui
@@ -1103,7 +1382,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -1129,7 +1408,7 @@ m_PackageAssets:
         email: 
         url: 
       category: Unity Test Framework
-      type: 
+      type: asset
       description: Test framework for running Edit mode and Play mode tests in Unity.
       status: 4
       errors: []
@@ -1169,7 +1448,9 @@ m_PackageAssets:
         - 1.1.30
         - 1.1.31
         - 1.1.33
+        - 1.3.0
         - 2.0.1-exp.1
+        - 2.0.1-exp.2
         - 2.0.1-pre.12
         - 2.0.1-pre.18
         compatible:
@@ -1179,7 +1460,9 @@ m_PackageAssets:
         - 1.1.30
         - 1.1.31
         - 1.1.33
+        - 1.3.0
         - 2.0.1-exp.1
+        - 2.0.1-exp.2
         - 2.0.1-pre.12
         - 2.0.1-pre.18
         verified: 1.1.33
@@ -1208,7 +1491,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -1234,7 +1517,7 @@ m_PackageAssets:
         email: 
         url: 
       category: Text Rendering
-      type: 
+      type: asset
       description: 'TextMeshPro is the ultimate text solution for Unity. It''s the
         perfect replacement for Unity''s UI Text and the legacy Text Mesh.
 
@@ -1374,7 +1657,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -1400,7 +1683,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Use Unity Timeline to create cinematic content, game-play sequences,
         audio sequences, and complex particle effects.
       status: 4
@@ -1479,6 +1762,8 @@ m_PackageAssets:
         - 1.7.0-pre.2
         - 1.7.0
         - 1.7.1
+        - 1.7.2
+        - 1.8.0
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -1507,6 +1792,8 @@ m_PackageAssets:
         - 1.7.0-pre.2
         - 1.7.0
         - 1.7.1
+        - 1.7.2
+        - 1.8.0
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -1540,7 +1827,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -1629,7 +1916,7 @@ m_PackageAssets:
         email: 
         url: 
       category: XR
-      type: 
+      type: asset
       description: This package includes the tracked pose driver for the legacy input
         system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
         Pose Driver. The Tracked Pose Driver is a behavior that enables GameObjects
@@ -1701,7 +1988,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -3469,7 +3756,7 @@ m_PackageAssets:
         email: 
         url: 
       category: Libraries
-      type: 
+      type: asset
       description: Custom version of the nunit package build to work with Unity.
         Used by the Unity Test Framework.
       status: 4
@@ -3508,7 +3795,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -3534,7 +3821,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: library
       description: 'Newtonsoft Json for use in Unity projects and Unity packages.
         Currently synced to version 12.0.2.
 
@@ -3599,6 +3886,164 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
         revision: d2fd6ed876261bbd82f59199ad711e7667bf633a
+        path: 
+    - packageId: com.unity.scriptablebuildpipeline@1.15.2
+      testable: 0
+      isDirectDependency: 0
+      version: 1.15.2
+      source: 1
+      resolvedPath: C:\Users\ROG\RiderProjects\Organstopia\Library\PackageCache\com.unity.scriptablebuildpipeline@1.15.2
+      assetPath: Packages/com.unity.scriptablebuildpipeline
+      name: com.unity.scriptablebuildpipeline
+      displayName: Scriptable Build Pipeline
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: asset
+      description: The Scriptable Build Pipeline moves the asset bundle build pipeline
+        to C#.  Use the pre-defined build flows, or create your own using the divided
+        up APIs.  This system improves build time, fixes incremental build, and provides
+        greater flexibility.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.5-preview
+        - 0.0.6-preview
+        - 0.0.8-preview
+        - 0.0.9-preview
+        - 0.0.10-preview
+        - 0.0.14-preview
+        - 0.0.15-preview
+        - 0.1.0-preview
+        - 0.2.0-preview
+        - 1.0.1-preview
+        - 1.1.0-preview
+        - 1.1.1-preview
+        - 1.2.1-preview
+        - 1.3.5-preview
+        - 1.4.1-preview
+        - 1.5.0-preview
+        - 1.5.1
+        - 1.5.2
+        - 1.5.4
+        - 1.5.6
+        - 1.5.10
+        - 1.6.3-preview
+        - 1.6.4-preview
+        - 1.6.5-preview
+        - 1.7.2
+        - 1.7.3
+        - 1.8.2
+        - 1.8.4
+        - 1.8.6
+        - 1.9.0
+        - 1.10.0
+        - 1.11.1
+        - 1.11.2
+        - 1.12.0
+        - 1.13.1
+        - 1.14.0
+        - 1.14.1
+        - 1.15.1
+        - 1.15.2
+        - 1.16.1
+        - 1.17.0
+        - 1.18.0
+        - 1.19.0
+        - 1.19.1
+        - 1.19.2
+        - 1.19.3
+        - 1.19.4
+        - 1.19.5
+        - 1.19.6
+        - 1.20.1
+        - 1.20.2
+        - 1.21.0
+        compatible:
+        - 0.0.5-preview
+        - 0.0.6-preview
+        - 0.0.8-preview
+        - 0.0.9-preview
+        - 0.0.10-preview
+        - 0.0.14-preview
+        - 0.0.15-preview
+        - 0.1.0-preview
+        - 0.2.0-preview
+        - 1.0.1-preview
+        - 1.1.0-preview
+        - 1.1.1-preview
+        - 1.2.1-preview
+        - 1.3.5-preview
+        - 1.4.1-preview
+        - 1.5.0-preview
+        - 1.5.1
+        - 1.5.2
+        - 1.5.4
+        - 1.5.6
+        - 1.5.10
+        - 1.6.3-preview
+        - 1.6.4-preview
+        - 1.6.5-preview
+        - 1.7.2
+        - 1.7.3
+        - 1.8.2
+        - 1.8.4
+        - 1.8.6
+        - 1.9.0
+        - 1.10.0
+        - 1.11.1
+        - 1.11.2
+        - 1.12.0
+        - 1.13.1
+        - 1.14.0
+        - 1.14.1
+        - 1.15.1
+        - 1.15.2
+        - 1.16.1
+        - 1.17.0
+        - 1.18.0
+        - 1.19.0
+        - 1.19.1
+        - 1.19.2
+        - 1.19.3
+        - 1.19.4
+        - 1.19.5
+        - 1.19.6
+        - 1.20.1
+        - 1.20.2
+        - 1.21.0
+        verified: 1.15.2
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - build
+      - bundle
+      - bundles
+      - assetbundles
+      - cache
+      - server
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 0
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637473059170000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/Addressables.git
+        revision: c238142d6dd78f465fa645cb6b4671ab3472ec99
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []

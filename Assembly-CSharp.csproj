@@ -897,6 +897,24 @@
  <Reference Include="UnityEngine.Advertisements.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Addressables">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Addressables.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.CacheServer">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ResourceManager">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ScriptableBuildPipeline">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
