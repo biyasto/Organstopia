@@ -1,4 +1,6 @@
 # Organstopia
 FPS Game with CloudSave player progression and NFT weapon
 
-#Reminder: add Addresable asset package when init new brach
+# Reminder: after init new brach
+Set up unity dashboard connection
+Add Addresable asset package 
