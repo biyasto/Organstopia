@@ -1,0 +1,636 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfbabd22c62c640a6ba459d46825055b, type: 3}
+  m_Name: README
+  m_EditorClassIdentifier: 
+  header:
+    title: Battle Pass README
+    icon: {fileID: 2800000, guid: 83f0684dab5534e2492f651aaaf4a151, type: 3}
+  sections:
+  - subHeader1: Intro
+    subHeader2: 
+    subHeader3: 
+    body: A seasonal points-based reward system is a popular and effective way to
+      retain players in a game over time. Unlike a time-based reward system, there
+      is an element of skill required to progress through the reward track. The Battle
+      Pass adds another layer of exclusive appeal to this system, while also adding
+      a monetization mechanic, by letting players purchase a second premium track
+      with additional rewards. This sample uses currencies as premium rewards, though
+      most games are designed to award cosmetic items at the premium level, or other
+      items that do not give players a gameplay advantage.
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: This sample expands on the Seasonal Events sample to add a seasonal points-based
+      reward system and Battle Pass. It's a good idea to check out that sample first,
+      if you haven't already. The README in that sample explains how the seasonal
+      events are configured and how they work. This document will explain how this
+      Battle Pass sample builds on and complements the Seasonal Events sample, and
+      specific Battle Pass features.
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 'Each time a new season starts, the player is offered a set of rewards
+      unique to the current season, which they can unlock by earning Season Experience
+      Points (Season XP). There are two tracks of rewards: the normal track, and
+      the Battle Pass (premium) track. All players are eligible to claim the normal
+      rewards track, but only Battle Pass holders are eligible for the Battle Pass
+      rewards.'
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: The Season XP and Battle Pass are only relevant to the current season.
+      When a season ends, the player's Season XP progress and Battle Pass ownership
+      are reset, but the claimed rewards are permanent.
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: Implementation Overview
+    subHeader2: 
+    subHeader3: 
+    body: When this scene first loads, it will initialize Unity Services and sign
+      the player in anonymously using Authentication. This can be seen in the BattlePassSceneManager
+      script.
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 'Once Unity Services completes initialization, we use a Cloud Code function
+      to retrieve the configuration and state of the Battle Pass. The configuration
+      that''s returned to us is based on the server''s timestamp and the Game Override
+      that''s currently active. Reward tiers are stored as two JSON values in Remote
+      Config: one array for the free tiers, and one array for the premium tiers.
+      From our Cloud Code call, we also get a number of seconds until the season
+      is over. With that we can control our countdown view, and eventually determine
+      that it''s time to query the server again for the next season''s configs.'
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 
+    bodyFormat: 0
+    boxCallout: "Note: This sample determines which Game Override data should be
+      returned based on the last digit of the number of minutes in the current server
+      time. This is a simplification to be able to frequently observe the season
+      change. In a real app, developers likely set up a Game Override to have specific
+      start and end dates, then Remote Config determines when the Game Override is
+      shown based on the server\u2019s date/time. In that case, the client and server
+      implementations can be a bit different."
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 'Everything about the reward system and Battle Pass is powered by Cloud
+      Code scripts, from getting the progress to claiming tiers to purchasing a Battle
+      Pass. At first, it looks like some of these actions could be simpler calls
+      directly to each service. For example, to get the player''s progress, you could
+      download the current player state via the Cloud Save SDK, and to purchase a
+      Battle Pass, you could make a call directly via the Economy SDK. However, these
+      actions have potential side effects that we want to be server-authoritative:'
+    bodyFormat: 0
+    boxCallout: 
+    bulletList:
+    - body: By retrieving the player's progress, you also want it to reset the player's
+        progress if the season has changed.
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    - body: By purchasing a Battle Pass, you might also be granted some premium rewards
+        for tiers you already claimed.
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    linkList: []
+  - subHeader1: Packages Required
+    subHeader2: 
+    subHeader3: 
+    body: 
+    bodyFormat: 0
+    boxCallout: 
+    bulletList:
+    - body: 'Authentication: Automatically signs in the user anonymously to keep
+        track of their data on the server side.'
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    - body: 'Economy: Keeps track of the player''s currencies and inventory items.'
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    - body: 'Cloud Code: Keeps important validation logic on the server side. In
+        this sample it is used for four main purposes:'
+      bodyFormat: 0
+      bulletList:
+      - body: Retrieve the player's season progress, or reset their progress if the
+          season has changed.
+        bodyFormat: 0
+        bulletList: []
+      - body: Gain Season XP, potentially unlocking new reward tiers.
+        bodyFormat: 0
+        bulletList: []
+      - body: Claim a reward tier, granting currency or inventory items.
+        bodyFormat: 0
+        bulletList: []
+      - body: Purchase a Battle Pass, which unlocks more rewards and possibly grants
+          rewards for tiers already claimed.
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: 'Remote Config: Provides key-value pairs where the value that is mapped
+        to a given key can be changed on the server-side, either manually or based
+        on specific Game Overrides. In this sample, we use the Game Overrides feature
+        to create the four seasonal events and return different values for certain
+        keys based on the Game Override.'
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    - body: 'Addressables: Allows developers to ask for an asset via its address.
+        Wherever the asset resides (local or remote), the system will locate it and
+        its dependencies, then return it. Here, we use it to look up event specific
+        images and prefabs based on the information we receive from Remote Config.'
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    - body: 'Cloud Save: Stores the player''s Season XP progress and Battle Pass
+        ownership token. This sample doesn''t actually use the Cloud Save methods
+        in C#, as all of the Cloud Save work is done via Cloud Code.'
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: See the package docs to learn how to install and configure these SDKs in
+      your project.
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList:
+    - linkText: Authentication
+      url: https://docs.unity.com/authentication/Content/InstallAndConfigureSDK.htm
+    - linkText: Economy
+      url: https://docs.unity.com/economy/Content/implementation.htm?tocpath=Implementation%7C_____0
+    - linkText: Cloud Code
+      url: https://docs.unity.com//cloud-code/Content/implementation.htm?tocpath=Implementation%7C_____0#SDK_installation
+    - linkText: Remote Config
+      url: https://docs.unity3d.com/Packages/com.unity.remote-config@2.0/manual/ConfiguringYourProject.html
+    - linkText: Addressables
+      url: https://docs.unity3d.com/Packages/com.unity.addressables@latest
+    - linkText: Cloud Save
+      url: https://docs.unity.com/cloud-save/implementation.htm
+  - subHeader1: Dashboard Setup
+    subHeader2: 
+    subHeader3: 
+    body: The setup here has a lot in common with the setup in the Seasonal Event
+      sample. We won't be using the Challenge Reward or seasonal images in this sample,
+      but we'll be using everything else, with some additions.
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 'To use Economy, Remote Config, and Cloud Code services in your game, activate
+      each service for your organization and project in the Unity Dashboard. To duplicate
+      this sample scene''s setup on your own dashboard, you''ll need a few currencies
+      in the Economy setup, some Config Values and Game Overrides set up in Remote
+      Config, and a number of scripts published in Cloud Code:'
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: Economy Items
+    subHeader3: 
+    body: 
+    bodyFormat: 0
+    boxCallout: 
+    bulletList:
+    - body: Currency
+      bodyFormat: 1
+      bulletList:
+      - body: Gem
+        bodyFormat: 1
+        bulletList:
+        - body: A premium currency used to purchase a Battle Pass, but also rewarded
+            by claiming Battle Pass tiers.
+          bodyFormat: 0
+          bulletList: []
+        - body: 'ID: GEM'
+          bodyFormat: 0
+          bulletList: []
+      - body: Coin
+        bodyFormat: 1
+        bulletList:
+        - body: A soft currency granted by some reward tiers.
+          bodyFormat: 0
+          bulletList: []
+        - body: 'ID: COIN'
+          bodyFormat: 0
+          bulletList: []
+      - body: Pearl
+        bodyFormat: 1
+        bulletList:
+        - body: A soft currency granted by some reward tiers.
+          bodyFormat: 0
+          bulletList: []
+        - body: 'ID: PEARL'
+          bodyFormat: 0
+          bulletList: []
+      - body: Star
+        bodyFormat: 1
+        bulletList:
+        - body: A soft currency granted by some reward tiers.
+          bodyFormat: 0
+          bulletList: []
+        - body: 'ID: STAR'
+          bodyFormat: 0
+          bulletList: []
+      linkList: []
+    - body: Inventory
+      bodyFormat: 1
+      bulletList:
+      - body: Sword
+        bodyFormat: 1
+        bulletList:
+        - body: A gameplay-related item granted by some normal reward tiers.
+          bodyFormat: 0
+          bulletList: []
+        - body: 'ID: SWORD'
+          bodyFormat: 0
+          bulletList: []
+      - body: Shield
+        bodyFormat: 1
+        bulletList:
+        - body: A gameplay-related item granted by some normal reward tiers.
+          bodyFormat: 0
+          bulletList: []
+        - body: 'ID: SHIELD'
+          bodyFormat: 0
+          bulletList: []
+      linkList: []
+    - body: Virtual Purchase
+      bodyFormat: 1
+      bulletList:
+      - body: 'Name: Battle Pass'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'ID: BATTLE_PASS'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Cost: 10 Gems'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Rewards: None (Cloud Code will grant Battle Pass ownership in Cloud
+          Save)'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: Remote Config
+    subHeader3: Config Values
+    body: 
+    bodyFormat: 0
+    boxCallout: 
+    bulletList:
+    - body: EVENT_NAME
+      bodyFormat: 1
+      bulletList:
+      - body: The name of the event to display in the scene.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Type: string'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Value: ""'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: EVENT_KEY
+      bodyFormat: 1
+      bulletList:
+      - body: The key used to look up event-specific values, such as the addresses
+          for the specific images.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Type: string'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Value: ""'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: EVENT_END_TIME
+      bodyFormat: 1
+      bulletList:
+      - body: The last digit of the last minute during which the Game Override is
+          active. Used when determining how much time is left in the current event.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Type: int'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Value: 0'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: EVENT_TOTAL_DURATION_MINUTES
+      bodyFormat: 1
+      bulletList:
+      - body: The total number of minutes that a given season's Game Override is
+          active for.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Type: int'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Value: 0'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: BATTLE_PASS_TIER_COUNT
+      bodyFormat: 1
+      bulletList:
+      - body: The total number of tiers each season. Not overridden by Game Overrides
+          in this example.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Type: int'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Value: 10'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: BATTLE_PASS_SEASON_XP_PER_TIER
+      bodyFormat: 1
+      bulletList:
+      - body: The amount of Season XP needed to unlock each tier. Not overridden
+          by Game Overrides in this example.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Type: int'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Value: 100'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: BATTLE_PASS_REWARDS_FREE
+      bodyFormat: 1
+      bulletList:
+      - body: The JSON that specifies what rewards are distributed when each tier
+          is claimed. This design accounts for just one reward per tier. Overridden
+          by seasonal Game Overrides.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Type: json'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Value: [] (empty array because reward tiers aren’t valid outside of seasonal events)'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: BATTLE_PASS_REWARDS_PREMIUM
+      bodyFormat: 1
+      bulletList:
+      - body: Just like BATTLE_PASS_REWARDS_FREE, but only granted when the player
+          owns that season's Battle Pass. Overridden by seasonal Game Overrides.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Type: json'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Value: [] (empty array because reward tiers aren’t valid outside of seasonal events)'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: Game Overrides
+    body: 
+    bodyFormat: 0
+    boxCallout: 
+    bulletList:
+    - body: Fall Event
+      bodyFormat: 1
+      bulletList:
+      - body: 'Status: Active'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Audience: Stateless JEXL'
+        bodyFormat: 0
+        bulletList:
+        - body: '"user.timestampMinutes % 10 == 0 || user.timestampMinutes % 10 ==
+            1 || user.timestampMinutes % 10 == 2"'
+          bodyFormat: 0
+          bulletList: []
+      - body: 'Start Date: Immediately'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'End Date: Indefinitely'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Overrides:'
+        bodyFormat: 0
+        bulletList:
+        - body: 'EVENT_NAME: Fall Event'
+          bodyFormat: 0
+          bulletList: []
+        - body: 'EVENT_KEY: Fall'
+          bodyFormat: 0
+          bulletList: []
+        - body: 'EVENT_END_TIME: 2'
+          bodyFormat: 0
+          bulletList: []
+        - body: 'EVENT_TOTAL_DURATION_MINUTES: 3'
+          bodyFormat: 0
+          bulletList: []
+        - body: 'BATTLE_PASS_REWARDS_FREE: See markdown README for details'
+          bodyFormat: 0
+          bulletList: []
+        - body: 'BATTLE_PASS_REWARDS_PREMIUM: See markdown README for details'
+          bodyFormat: 0
+          bulletList: []
+      linkList: []
+    - body: Winter Event
+      bodyFormat: 1
+      bulletList:
+      - body: 'Audience: Stateless JEXL'
+        bodyFormat: 0
+        bulletList:
+        - body: '"user.timestampMinutes % 10 == 3 || user.timestampMinutes % 10 ==
+            4"'
+          bodyFormat: 0
+          bulletList: []
+      - body: 'EVENT_NAME: Winter Event'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'EVENT_KEY: Winter'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'EVENT_END_TIME: 4'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'EVENT_TOTAL_DURATION_MINUTES: 2'
+        bodyFormat: 0
+        bulletList: []
+      - body: For everything else, just like the Fall Event, but with different rewards.
+        bodyFormat: 2
+        bulletList: []
+      linkList: []
+    - body: Spring Event
+      bodyFormat: 1
+      bulletList:
+      - body: 'Audience: Stateless JEXL'
+        bodyFormat: 0
+        bulletList:
+        - body: '"user.timestampMinutes % 10 == 5 || user.timestampMinutes % 10 ==
+            6 || user.timestampMinutes % 10 == 7"'
+          bodyFormat: 0
+          bulletList: []
+      - body: 'EVENT_NAME: Spring Event'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'EVENT_KEY: Spring'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'EVENT_END_TIME: 7'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'EVENT_TOTAL_DURATION_MINUTES: 3'
+        bodyFormat: 0
+        bulletList: []
+      - body: For everything else, just like the Fall Event, but with different rewards.
+        bodyFormat: 2
+        bulletList: []
+      linkList: []
+    - body: Summer Event
+      bodyFormat: 1
+      bulletList:
+      - body: 'Audience: Stateless JEXL'
+        bodyFormat: 0
+        bulletList:
+        - body: '"user.timestampMinutes % 10 == 8 || user.timestampMinutes % 10 ==
+            9"'
+          bodyFormat: 0
+          bulletList: []
+      - body: 'EVENT_NAME: Summer Event'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'EVENT_KEY: Summer'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'EVENT_END_TIME: 9'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'EVENT_TOTAL_DURATION_MINUTES: 2'
+        bodyFormat: 0
+        bulletList: []
+      - body: For everything else, just like the Fall Event, but with different rewards.
+        bodyFormat: 2
+        bulletList: []
+      linkList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: Cloud Code Scripts
+    subHeader3: 
+    body: 
+    bodyFormat: 0
+    boxCallout: 
+    bulletList:
+    - body: BattlePass_GetState
+      bodyFormat: 1
+      bulletList:
+      - body: 'Parameters: none'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Script: "Assets/Use Case Samples/Battle Pass/Cloud Code/BattlePass_GetState.js"'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: BattlePass_GainSeasonXP
+      bodyFormat: 1
+      bulletList:
+      - body: 'Parameters:'
+        bodyFormat: 0
+        bulletList:
+        - body: amount
+          bodyFormat: 0
+          bulletList:
+          - 'Type: NUMERIC'
+          - The amount of season XP to gain.
+      - body: 'Script: "Assets/Use Case Samples/Battle Pass/Cloud Code/BattlePass_GainSeasonXP.js"'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: BattlePass_ClaimTier
+      bodyFormat: 1
+      bulletList:
+      - body: 'Parameters:'
+        bodyFormat: 0
+        bulletList:
+        - body: tierIndex
+          bodyFormat: 0
+          bulletList:
+          - 'Type: NUMERIC'
+          - The 0-based index of the tier to claim.
+      - body: 'Script: "Assets/Use Case Samples/Battle Pass/Cloud Code/BattlePass_ClaimTier.js"'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: BattlePass_PurchaseBattlePass
+      bodyFormat: 1
+      bulletList:
+      - body: 'Parameters: none'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Script: "Assets/Use Case Samples/Battle Pass/Cloud Code/BattlePass_PurchaseBattlePass.js"'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 
+    bodyFormat: 0
+    boxCallout: 'Note: The Cloud Code scripts included in the "Cloud Code" folder
+      are just local copies, since you can''t see the sample''s dashboard. Changes
+      to these scripts will not affect the behavior of this sample since they will
+      not be automatically uploaded to Cloud Code service.'
+    bulletList: []
+    linkList: []

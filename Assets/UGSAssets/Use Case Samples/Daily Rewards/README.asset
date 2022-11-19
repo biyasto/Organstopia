@@ -1,0 +1,373 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfbabd22c62c640a6ba459d46825055b, type: 3}
+  m_Name: README
+  m_EditorClassIdentifier: 
+  header:
+    title: Daily Rewards README
+    icon: {fileID: 2800000, guid: 83f0684dab5534e2492f651aaaf4a151, type: 3}
+  sections:
+  - subHeader1: Intro
+    subHeader2: 
+    subHeader3: 
+    body: 'The Daily Reward (Monthly) Calendar is a prevalent feature in connected
+      games. Whether it is presented in a weekly or monthly calendar, with or without
+      completion streaks, Daily Rewards are present in games across all genre to
+      boost retention.'
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 'This feature will present a calendar of Daily Rewards that generally increase
+      in value over time to encourage players to return daily to claim them. Our
+      implementation permits skipping days, but rewards are always claimed sequentially
+      so, if a day is missed, the same reward will be available the next day. Only
+      once a particular day is claimed will the subsequent day''s reward be unlocked
+      (on the next day). '
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: Implementation Overview
+    subHeader2: 
+    subHeader3: 
+    body: 'This sample demonstrates how to initialize Unity Services, retrieve and
+      update current values from the Economy service, call Cloud Code to retrieve
+      the updated status and claim each day''s reward. '
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 'This Use Case Sample uses Cloud Save rather than Remote Config to store
+      the Event start time (i.e. the first day of the month). The normal implementation
+      for Daily Rewards is to set the start epoch time on Remote Config so all players
+      experience the rewards starting on the first day of the month. However, to
+      permit testing, we save this value to Cloud Save so each user can experience
+      the Daily Rewards calendar as if the month starts when the Use Case sample
+      is first opened. '
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 
+    bodyFormat: 0
+    boxCallout: 'Note: To permit faster testing, each "day" is compressed into 30
+      seconds. This permits an entire month''s rewards to be claimed in 15 minutes. '
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: Currency Icon Sprite Addressables Implementation
+    subHeader3: 
+    body: 'An added feature of this Use Case Sample is how it implements the Currency
+      icon Sprites for all Currencies. A key feature of this implementation is that
+      you, as a developer, can add the Addressables address to the Currency icon
+      for each Currency directly in the Custom Data on the Economy Dashboard and
+      retrieve it at runtime without need to change your code. This permits, for
+      example, swapping in holiday-themed Sprites simply by changing the address
+      used on the Economy Dashboard without needing to update your app. '
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 'To implement, "spriteAddress" values are added to each Economy Currency''s
+      Custom Data json, allowing this Use Case sample to determine each Currency''s
+      Addressables address and initialize all Currency icon Sprites at startup. Later,
+      when Sprites are needed (for example, when showing the rewards granted for
+      claiming a Daily Reward), the Currency''s key (for example, "COIN") is used
+      as a dictionary key to quickly find the associated Sprite, which is then used
+      in the popup. '
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 'For details, please see the Daily Rewards'' EconomyManager.InitializeCurrencySprites()
+      method which is called at startup to initialize the dictionary with all Currency
+      icon Sprites, and the GetSpriteForCurrencyId() method which looks up Currency
+      IDs (such as "COIN") to find the associated Sprite. '
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 'The Economy Dashboard Configuration contains the following data to facilitate
+      these Currency icon Addressables: '
+    bodyFormat: 0
+    boxCallout: 
+    bulletList:
+    - body: COIN
+      bodyFormat: 0
+      bulletList:
+      - body: 'Custom Data:'
+        bodyFormat: 0
+        bulletList:
+        - body: '{ "spriteAddress": "Sprites/Currency/Coin" }'
+          bodyFormat: 0
+          bulletList: []
+      linkList: []
+    - body: GEM
+      bodyFormat: 0
+      bulletList:
+      - body: 'Custom Data:'
+        bodyFormat: 0
+        bulletList:
+        - body: '{ "spriteAddress": "Sprites/Currency/Gem" }'
+          bodyFormat: 0
+          bulletList: []
+      linkList: []
+    - body: PEARL
+      bodyFormat: 0
+      bulletList:
+      - body: 'Custom Data:'
+        bodyFormat: 0
+        bulletList:
+        - body: '{ "spriteAddress": "Sprites/Currency/Pearl" }'
+          bodyFormat: 0
+          bulletList: []
+      linkList: []
+    - body: STAR
+      bodyFormat: 0
+      bulletList:
+      - body: 'Custom Data:'
+        bodyFormat: 0
+        bulletList:
+        - body: '{ "spriteAddress": "Sprites/Currency/Star" }'
+          bodyFormat: 0
+          bulletList: []
+      linkList: []
+    linkList: []
+  - subHeader1: Packages Required
+    subHeader2: 
+    subHeader3: 
+    body: 
+    bodyFormat: 0
+    boxCallout: 
+    bulletList:
+    - body: 'Authentication: Automatically signs in the user anonymously to keep
+        track of their data on the server side.'
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    - body: 'Economy: Retrieves the starting and updated currency balances at runtime.'
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    - body: 'Cloud Code: Accesses the current event status, claims Daily Rewards
+        and resets the feature at the end of the month for demonstration purposes.
+        It also calls Remote Config to determine the parameters for the Daily Rewards
+        (rewards to grant, number and duration of days, etc.) '
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    - body: 'Remote Config: Defines parameters for the Daily Rewards event including
+        rewards granted on each day, day duration, number of days, etc. '
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    - body: 'Addressables: Allows asset retrieval by address. '
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    - body: 'Cloud Save: Stores and retrieves the event status such as start epoch
+        time, days claimed, etc. '
+      bodyFormat: 0
+      bulletList: []
+      linkList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: See the package docs to learn how to install and configure these SDKs in
+      your project.
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList:
+    - linkText: Authentication
+      url: https://docs.unity.com/authentication/Content/InstallAndConfigureSDK.htm
+    - linkText: Economy
+      url: https://docs.unity.com/economy/Content/implementation.htm?tocpath=Implementation%7C_____0
+    - linkText: Cloud Code
+      url: https://docs.unity.com//cloud-code/Content/implementation.htm?tocpath=Implementation%7C_____0#SDK_installation
+    - linkText: Remote Config
+      url: https://docs.unity3d.com/Packages/com.unity.remote-config@2.0/manual/ConfiguringYourProject.html
+    - linkText: Addressables
+      url: https://docs.unity3d.com/Packages/com.unity.addressables@latest
+    - linkText: Cloud Save
+      url: https://docs.unity.com/cloud-save/implementation.htm
+  - subHeader1: Dashboard setup
+    subHeader2: 
+    subHeader3: 
+    body: "To use Economy, Cloud Code, Remote Config and Cloud Save services in your
+      game, activate each service for your organization and project in the Unity
+      Dashboard. You\u2019ll need a few currency items for rewards, as well as scripts
+      in Cloud Code: "
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: Economy Items
+    subHeader3: 
+    body: 
+    bodyFormat: 0
+    boxCallout: 
+    bulletList:
+    - body: Coin
+      bodyFormat: 1
+      bulletList:
+      - body: A currency reward.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'ID: "COIN"'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: Gem
+      bodyFormat: 1
+      bulletList:
+      - body: A currency reward.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'ID: "GEM"'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: Pearl
+      bodyFormat: 1
+      bulletList:
+      - body: A currency reward.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'ID: "PEARL"'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: Star
+      bodyFormat: 1
+      bulletList:
+      - body: A currency reward.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'ID: "STAR"'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: Cloud Code Scripts
+    subHeader3: 
+    body: 
+    bodyFormat: 0
+    boxCallout: 
+    bulletList:
+    - body: DailyRewards_GetStatus
+      bodyFormat: 1
+      bulletList:
+      - body: Called at startup to retrieve the current status of the event from
+          Cloud Save, update it and return it to the client.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Parameters: none'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Script: "Assets/Use Case Samples/Daily Rewards/Cloud Code/DailyRewards_GetStatus.js"'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: DailyRewards_Claim
+      bodyFormat: 1
+      bulletList:
+      - body: Called in response to a claim Daily Reward request, this script verifies
+          eligibility, grants the appropriate day's rewards and updates the state
+          on Cloud Save.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Parameters: none'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Script: "Assets/Use Case Samples/Daily Rewards/Cloud Code/DailyRewards_Claim.js"'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    - body: DailyRewards_ResetEvent
+      bodyFormat: 1
+      bulletList:
+      - body: For demonstration purposes, this script resets the Daily Rewards state
+          on the client so a new month's rewards can be granted.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Parameters: none'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Script: "Assets/Use Case Samples/Daily Rewards/Cloud Code/DailyRewards_ResetEvent.js"'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 
+    bodyFormat: 0
+    boxCallout: 'Note: The Cloud Code scripts included in the `Cloud Code` folder
+      are just local copies, since you can''t see the sample''s dashboard. Changes
+      to these scripts will not affect the behavior of this sample since they will
+      not be automatically uploaded to Cloud Code service.'
+    bulletList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: Remote Config
+    subHeader3: Config Value
+    body: 
+    bodyFormat: 0
+    boxCallout: 
+    bulletList:
+    - body: DAILY_REWARDS_CONFIG
+      bodyFormat: 1
+      bulletList:
+      - body: Describes all configuration values required and rewards to be granted
+          for the Daily Reward feature.
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Type: json'
+        bodyFormat: 0
+        bulletList: []
+      - body: 'Value: see markdown README for details.'
+        bodyFormat: 0
+        bulletList: []
+      linkList: []
+    linkList: []
+  - subHeader1: 
+    subHeader2: 
+    subHeader3: 
+    body: 
+    bodyFormat: 0
+    boxCallout: 
+    bulletList: []
+    linkList: []

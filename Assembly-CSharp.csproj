@@ -52,180 +52,385 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20SymbolExample.cs" />
      <Compile Include="Assets\Scripts\NFTConnect\OpenMenu.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Loot Boxes With Cooldown\Scripts\LootBoxesWithCooldownSceneManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\EditorAnalytics\SamplesEditorAnalytics.cs" />
      <Compile Include="Assets\Scripts\Effects\TextAmmoDisplay.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721URIExample.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\VirtualShopItemView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Seasonal Events\Scripts\SeasonalEventsSampleView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandBatchSystem.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer721.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSignMessageExample.cs" />
-     <Compile Include="Assets\Scripts\System\AmmoBox.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\AddressablesManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721OwnerOfExample.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportEvent.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\UserReportingConfigureOnly.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC1155\ERC1155BalanceOfExample.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\AB Test Level Difficulty\Scripts\ABTestLevelDifficultySampleView.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-     <Compile Include="Assets\Scripts\UI\WeaponInfoUI.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Seasonal Events\Scripts\CountdownManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Daily Rewards\Scripts\CalendarDayView.cs" />
      <Compile Include="Assets\Scripts\UI\MinimapUI.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Scenes\WalletLogin.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Loot Boxes\Scripts\LootBoxesSampleView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\BattlePassHelper.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer721Example.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\BattlePassSceneManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Idle Clicker Game\Scripts\EconomyManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20DecimalsExample.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-     <Compile Include="Assets\Scripts\Helpers.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\InventoryPopupView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Daily Rewards\Scripts\DailyRewardsEventManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\EconomyManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSendTransactionExample.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Library\EVM.cs" />
-     <Compile Include="Assets\Scripts\System\Target.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Cloud AI Mini Game\Scripts\EconomyManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Scenes\WebLogin.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721BalanceOfExample.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\VerifyExample.cs" />
-     <Compile Include="Assets\Scripts\GradientTexture.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\AllErc1155Example.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Loot Boxes With Cooldown\Scripts\CloudCodeResultUnavailableException.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC1155\ERC1155URIExample.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\RewardDetail.cs" />
      <Compile Include="Assets\Scripts\Effects\LiquidContainer.cs" />
-     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
-     <Compile Include="Assets\Scripts\Minimap\MinimapSystem.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\Preconditions.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Daily Rewards\Scripts\CalendarView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\AddressablesManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySignMessageExample.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Minter\Model\CreateMintModel.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignOut.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20TotalSupplyExample.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSha3Example.cs" />
-     <Compile Include="Assets\Scripts\Effects\CameraShaker.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Seasonal Events\Scripts\ServerTimeHelper.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\AB Test Level Difficulty\Scripts\RemoteConfigManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportScreenshot.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\SimpleJson.cs" />
      <Compile Include="Assets\Scripts\LevelLayout\LevelRoomGroup.cs" />
-     <Compile Include="Assets\Web3Unity\Prefabs\ERC1155\ImportNFTTextureExample.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CustomRPCExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\Scripts\NFTConnect\CheckUnicellBalance.cs" />
-     <Compile Include="Assets\Scripts\NFTConnect\CheckFireBalance.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\VirtualShopManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\MessageListItemView.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSha3Example.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-     <Compile Include="Assets\Scripts\System\Projectile.cs" />
      <Compile Include="Assets\Scripts\System\PoolSystem.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySend20Example.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\VirtualShopItem.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Idle Clicker Game\Scripts\GridEntity.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\NullUserReportingPlatform.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\CancellationTokenHelper.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\InventoryPopupView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Cloud AI Mini Game\Scripts\CloudAIMiniGameSceneManager.cs" />
      <Compile Include="Assets\Scripts\NFTConnect\CheckPieceBalance.cs" />
-     <Compile Include="Assets\Scripts\KeyLockSystem\Lock.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportList.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer1155.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\Version2018_3\Screenshots\ScreenshotManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandSystem\DefeatRedEnemyCommand.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportAttachment.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportNamedValue.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\BlockNumberExample.cs" />
-     <Compile Include="Assets\Scripts\TriggerActionsSystem\EnableObjectAction.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySendTransactionExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Starter Pack\Scripts\EconomyManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\TxStatus.cs" />
-     <Compile Include="Assets\Scripts\Audio\WorldAudioPool.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Loot Boxes\Scripts\CloudCodeResultUnavailableException.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportingClient.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\AB Test Level Difficulty\Scripts\CloudCodeManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CustomCallExample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\AB Test Level Difficulty\Scripts\EconomyManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Library\Web3Wallet.cs" />
      <Compile Include="Assets\Scripts\Audio\UIAudioPlayer.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer20Example.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer20.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer1155Example.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\EditorAnalytics\ButtonEditorAnalytics.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\AddressablesManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\CategoryButton.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Over-The-Air Content\Scripts\OverTheAirContentSampleView.cs" />
      <Compile Include="Assets\Scripts\TriggerActionsSystem\TargetChecker.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\Scripts\Minimap\MinimapElement.cs" />
-     <Compile Include="Assets\Scripts\KeyLockSystem\Keychain.cs" />
      <Compile Include="Assets\Scripts\System\EndCheckpoint.cs" />
      <Compile Include="Assets\Scripts\KeyLockSystem\Key.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-     <Compile Include="Assets\Scripts\UI\GameSystemInfo.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Starter Pack\Scripts\StarterPackSceneManager.cs" />
      <Compile Include="Assets\Scripts\Effects\LiquidAmmoDisplay.cs" />
      <Compile Include="Assets\Scripts\NFTConnect\GetAccount.cs" />
-     <Compile Include="Assets\Scripts\TriggerActionsSystem\DissolveAction.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-     <Compile Include="Assets\Scripts\UI\FullscreenMap.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\DataClasses.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\RemoteConfigManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandSystem\GameOverCommand.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\CountdownView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Seasonal Events\Scripts\RemoteConfigManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Minter\MintWebGL.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySend721Example.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\EthBalanceOfExample.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSendTransactionExample.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\UnityUserReportParser.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletLogOut.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\AllErc721Example.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-     <Compile Include="Assets\Scripts\GameDatabase.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\ProjectInboxManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Daily Rewards\Scripts\DayView.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Library\ERC1155.cs" />
      <Compile Include="Assets\Scripts\Audio\RandomPlayer.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\BattlePassView.cs" />
      <Compile Include="Assets\Scripts\TriggerActionsSystem\GameAction.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\Views\MessagePreviewView.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignMessageExample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\EconomyManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Seasonal Events\Scripts\CloudCodeManager.cs" />
      <Compile Include="Assets\Scripts\TriggerActionsSystem\MovingAction.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\CloudSaveManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Library\ERC20.cs" />
-     <Compile Include="Assets\Scripts\System\Controller.cs" />
      <Compile Include="Assets\Scripts\LevelLayout\LevelRoom.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Minter\MintPK.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC1155\ERC1155BalanceOfBatchExample.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20NameExample.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\AttachmentExtensions.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Loot Boxes With Cooldown\Scripts\EconomyManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Loot Boxes\Scripts\CloudCodeManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Library\Web3PrivateKey.cs" />
      <Compile Include="Assets\Scripts\Effects\ImpactManager.cs" />
      <Compile Include="Assets\Scripts\System\WeaponAnimationEventHandler.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySend1155Example.cs" />
      <Compile Include="Assets\Scripts\System\TargetSpawner.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Library\ERC721.cs" />
-     <Compile Include="Assets\Scripts\NFTConnect\CharacterOwnedData.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Loot Boxes With Cooldown\Scripts\LootBoxesWithCooldownSampleView.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignVerifyExample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\BattlePassConfig.cs" />
      <Compile Include="Assets\Scripts\UI\FinalScoreUI.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeyAddressExample.cs" />
-     <Compile Include="Assets\Scripts\UI\LevelSelectionUI.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Loot Boxes\Scripts\LootBoxesSceneManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\FeedbackBootstrapper.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportMetric.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\Views\MessageListView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Loot Boxes With Cooldown\Scripts\CloudCodeManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\TierState.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\InventoryItemView.cs" />
      <Compile Include="Assets\Scripts\UI\RestartLevel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Library\WebGL\Web3GL.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
-     <Compile Include="Assets\Scripts\System\GameSystem.cs" />
-     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721OwnerOfBatchExample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\ItemAndAmountSpec.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
      <Compile Include="Assets\Scripts\System\Weapon.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-     <Compile Include="Assets\Scripts\LevelLayout\LevelLayout.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\Utils.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Idle Clicker Game\Scripts\UnlockManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20BalanceOfExample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Idle Clicker Game\Scripts\WellUnlockView.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSendContractExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\Scripts\System\StartCheckpoint.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Idle Clicker Game\Scripts\IdleClickerGameSampleView.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CreateContractDataExample.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Minter\MintWeb3Wallet.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\Views\InboxPopupView.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Daily Rewards\Scripts\DailyRewardsSceneManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\RewardPopupView.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\RemoteConfigManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\UnityUserReporting.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Cloud AI Mini Game\Scripts\CloudAIMiniGameSampleView.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20SymbolExample.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\MessagePopup.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\ILogListener.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\VirtualShopSampleView.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\SerializableStackFrame.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Cloud AI Mini Game\Scripts\DataStructs.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\LocalSaveManager.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSignMessageExample.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\UserReportingScript.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Idle Clicker Game\Scripts\SimulatedCurrencyManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Idle Clicker Game\Scripts\IdleClickerGameSceneManager.cs" />
+     <Compile Include="Assets\Scripts\System\AmmoBox.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Idle Clicker Game\Scripts\CloudCodeManager.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CloudCodeManager.cs" />
+     <Compile Include="Assets\Scripts\UI\WeaponInfoUI.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Scenes\WalletLogin.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\AB Test Level Difficulty\Scripts\CloudSaveManager.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\FrameRateLimiter.cs" />
+     <Compile Include="Assets\Scripts\Helpers.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Idle Clicker Game\Scripts\CloudCodeResultUnavailableException.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\LogDispatcher.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Library\EVM.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\CurrencyItemView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Cloud AI Mini Game\Scripts\CloudCodeManager.cs" />
+     <Compile Include="Assets\Scripts\System\Target.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandBatchingSampleView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Daily Rewards\Scripts\EconomyManager.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\VerifyExample.cs" />
+     <Compile Include="Assets\Scripts\GradientTexture.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\AllErc1155Example.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\CurrencyHudView.cs" />
+     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Cloud AI Mini Game\Scripts\GridEntityView.cs" />
+     <Compile Include="Assets\Scripts\Minimap\MinimapSystem.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Minter\Model\CreateMintModel.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\Version2018_3\AsyncUnityUserReportingPlatform.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignOut.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\VirtualShopSceneManager.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20TotalSupplyExample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\AddressablesLoadAsyncData.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\EconomyManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Starter Pack\Scripts\StarterPackSampleView.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSha3Example.cs" />
+     <Compile Include="Assets\Scripts\Effects\CameraShaker.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\Version2018_3\Screenshots\ScreenshotType.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\RemoteConfigManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\Version2018_3\Screenshots\Downsampler.cs" />
+     <Compile Include="Assets\Web3Unity\Prefabs\ERC1155\ImportNFTTextureExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CustomRPCExample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\VirtualShopCategory.cs" />
+     <Compile Include="Assets\Scripts\NFTConnect\CheckFireBalance.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\CloudCodeManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\UserReportingState.cs" />
+     <Compile Include="Assets\Scripts\System\Projectile.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySend20Example.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Idle Clicker Game\Scripts\DataStructs.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\Scripts\KeyLockSystem\Lock.cs" />
+     <Compile Include="Assets\Scripts\TriggerActionsSystem\EnableObjectAction.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySendTransactionExample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\MessageView.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\Views\InboxButtonView.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\IUserReportingPlatform.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportMeasure.cs" />
+     <Compile Include="Assets\Scripts\Audio\WorldAudioPool.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\RemoteConfigManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Seasonal Events\Scripts\EconomyManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\GameStateManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\UserReportingMonitor.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Loot Boxes\Scripts\EconomyManager.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReport.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer20Example.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer20.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Seasonal Events\Scripts\CloudSaveManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\BattlePassState.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\CyclicalList.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\MetricsGatheringMode.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer1155Example.cs" />
+     <Compile Include="Assets\Scripts\KeyLockSystem\Keychain.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\UnityUserReportingPlatform.cs" />
+     <Compile Include="Assets\Scripts\UI\GameSystemInfo.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportingClientConfiguration.cs" />
+     <Compile Include="Assets\Scripts\TriggerActionsSystem\DissolveAction.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\FullscreenMap.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\UnityUserReportingUpdater.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSendTransactionExample.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\FramerateMonitor.cs" />
+     <Compile Include="Assets\Scripts\GameDatabase.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\CloudCodeManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\BattlePassSampleView.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\InGameMailboxSceneManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\Views\ProjectInboxView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\CloudCodeResultUnavailableException.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\RewardItemView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\TierView.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignMessageExample.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\Views\MessageDetailView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\AB Test Level Difficulty\Scripts\AnalyticsManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\DataClasses.cs" />
+     <Compile Include="Assets\Scripts\System\Controller.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\PngHelper.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\UserReportingXRExtensions.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\InGameMailboxSampleView.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Minter\MintPK.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Daily Rewards\Scripts\CloudCodeManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandBatchingSceneManager.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC1155\ERC1155BalanceOfBatchExample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandSystem\OpenChestCommand.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20NameExample.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\ClientVersionCheck.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Daily Rewards\Scripts\CloudCodeResultUnavailableException.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CloudSaveManager.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySend1155Example.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Library\ERC721.cs" />
+     <Compile Include="Assets\Scripts\NFTConnect\CharacterOwnedData.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\LicenseLevel.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignVerifyExample.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeyAddressExample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Over-The-Air Content\Scripts\OverTheAirContentSceneManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\InboxStateManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\UserReportingPlatformType.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\InventoryPopupView.cs" />
+     <Compile Include="Assets\Scripts\UI\LevelSelectionUI.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\EconomyManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportEventLevel.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\TierPopupView.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\LoadSceneButton.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportPreview.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\AB Test Level Difficulty\Scripts\ABTestLevelDifficultySceneManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\InventoryHudView.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandSystem\Command.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Library\WebGL\Web3GL.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+     <Compile Include="Assets\Scripts\System\GameSystem.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\Version2018_3\Screenshots\PngEncoder.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Cloud AI Mini Game\Scripts\CloudCodeResultUnavailableException.cs" />
+     <Compile Include="Assets\UGSAssets\Common\Scripts\RewardDisplayView.cs" />
+     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721OwnerOfBatchExample.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Starter Pack\Scripts\CloudCodeManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\Version2018_3\Screenshots\ScreenshotRecorder.cs" />
+     <Compile Include="Assets\Scripts\LevelLayout\LevelLayout.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportAppearanceHint.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Seasonal Events\Scripts\SeasonalEventsSceneManager.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Daily Rewards\Scripts\DailyRewardsSampleView.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Over-The-Air Content\Scripts\RemoteConfigManager.cs" />
+     <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\SerializableException.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandSystem\AchieveBonusGoalCommand.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Daily Rewards\Scripts\BonusDayView.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
      <Compile Include="Assets\Scripts\NFTConnect\CharacterToken.cs" />
+     <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandSystem\DefeatBlueEnemyCommand.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\UGSAssets\Common\UserReporting\Release Notes.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Art\Shaders\Acid.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\Art\Shaders\Brain.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Art\Shaders\Fleisch.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Art\Shaders\StandardFleischDisolve.shader" />
      <None Include="Assets\Art\Shaders\StandardCutout.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_SDF.shader" />
      <None Include="Assets\Art\Shaders\BubbleBurst.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\Art\Shaders\LiquidContent.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\Art\Shaders\MapShader.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\Art\Font\OFL.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\Art\Shaders\StandardFleisch.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\UGSAssets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
  <Reference Include="UnityEngine">
@@ -466,7 +671,7 @@
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Assets/Plugins/BouncyCastle.Crypto.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -831,23 +1036,44 @@
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.CacheServer">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Addressables">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Services.Analytics.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Analytics.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Timeline">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.CloudCode">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.CloudCode.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Services.CloudSave.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.CloudSave.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Services.Analytics">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Analytics.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ResourceManager">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
@@ -861,23 +1087,41 @@
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <Reference Include="Analytics">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
- <Reference Include="Analytics">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Analytics.dll</HintPath>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.Core">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.Authentication">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Authentication.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.CloudSave">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.CloudSave.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.Core.Analytics">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Runtime">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.Core.Environments">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.Economy">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Economy.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -888,8 +1132,20 @@
  <Reference Include="UnityEngine.Monetization">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ScriptableBuildPipeline">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.Economy.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Economy.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Addressables.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.SpatialTracking">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
@@ -897,23 +1153,14 @@
  <Reference Include="UnityEngine.Advertisements.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Addressables">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
+ <Reference Include="Unity.Services.RemoteConfig">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.RemoteConfig.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Addressables.Editor">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+ <Reference Include="Unity.RemoteConfig.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.RemoteConfig.Editor.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.CacheServer">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ResourceManager">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ScriptableBuildPipeline">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ScriptableBuildPipeline.Editor">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+ <Reference Include="Unity.RemoteConfig.Editor.Core">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.RemoteConfig.Editor.Core.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

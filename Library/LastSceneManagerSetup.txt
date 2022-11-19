@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/TestScene.unity
+- path: Assets/UGSAssets/Use Case Samples/Battle Pass/BattlePassSample.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
