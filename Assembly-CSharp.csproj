@@ -356,6 +356,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandSystem\Command.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Library\WebGL\Web3GL.cs" />
+     <Compile Include="Assets\Scripts\MenuSceneManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\Scripts\System\GameSystem.cs" />
      <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\Version2018_3\Screenshots\PngEncoder.cs" />
@@ -1030,59 +1031,29 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.CacheServer">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Addressables">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
- </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Services.Analytics.Editor">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Analytics.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <Reference Include="Unity.Addressables">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Services.CloudCode">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.CloudCode.dll</HintPath>
  </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Services.CloudSave.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.CloudSave.Editor.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Services.Analytics">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ResourceManager">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
@@ -1096,9 +1067,6 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Services.Core">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
@@ -1107,6 +1075,54 @@
  </Reference>
  <Reference Include="Unity.Services.CloudSave">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.CloudSave.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.Economy">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Economy.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Monetization">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Addressables.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Tilemap.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.RemoteConfig">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.RemoteConfig.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VisualStudio.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.Analytics.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Analytics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RemoteConfig.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.RemoteConfig.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.Analytics">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ResourceManager">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Postprocessing.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PlasticSCM.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Services.Core">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Services.Core.Analytics">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
@@ -1120,17 +1136,14 @@
  <Reference Include="Unity.Services.Core.Environments">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Services.Economy">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.Economy.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RemoteConfig.Editor.Core">
+ <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.RemoteConfig.Editor.Core.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Monetization">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ScriptableBuildPipeline">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
@@ -1141,9 +1154,6 @@
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Addressables.Editor">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.ScriptableBuildPipeline.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
  </Reference>
@@ -1152,15 +1162,6 @@
  </Reference>
  <Reference Include="UnityEngine.Advertisements.Editor">
  <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Services.RemoteConfig">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.Services.RemoteConfig.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RemoteConfig.Editor">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.RemoteConfig.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RemoteConfig.Editor.Core">
- <HintPath>C:/Users/ROG/RiderProjects/Organstopia/Library/ScriptAssemblies/Unity.RemoteConfig.Editor.Core.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
