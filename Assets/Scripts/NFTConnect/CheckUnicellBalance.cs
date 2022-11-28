@@ -18,7 +18,7 @@ public class CheckUnicellBalance : MonoBehaviour
         string account = PlayerPrefs.GetString("Account");
 
         BigInteger balanceOf = await ERC1155.BalanceOf(chain, network, contract, account, tokenId);
-        print("unicell"+balanceOf);
+        print("weapon03"+balanceOf);
         if (balanceOf > 0)
         {
             have = true;
