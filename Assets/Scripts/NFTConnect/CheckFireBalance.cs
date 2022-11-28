@@ -19,7 +19,7 @@ public class CheckFireBalance : MonoBehaviour
         string account = PlayerPrefs.GetString("Account");
 
         BigInteger balanceOf = await ERC1155.BalanceOf(chain, network, contract, account, tokenId);
-        print("fire"+balanceOf);
+        print("weapon01"+balanceOf);
         if (balanceOf > 0)
         {
             have = true;
