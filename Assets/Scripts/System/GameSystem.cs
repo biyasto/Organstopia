@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Services.Economy;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -54,7 +55,7 @@ public class GameSystem : MonoBehaviour
         RetrieveTargetsCount();
         
 #if UNITY_EDITOR
-        //in the editor we find which level we are currently in. Inefficient but since any level can be opened in the
+        //in the editor we find which level we areư currently in. Inefficient but since any level can be opened in the
         //editor we can't assume where we start
 
         string currentScene = SceneManager.GetActiveScene().path;
@@ -175,7 +176,7 @@ public class GameSystem : MonoBehaviour
         GameSystemInfo.Instance.UpdateScore(0);
         LevelSelectionUI.Instance.Init();
     }
-
+    
     void Update()
     {
         if (m_TimerRunning)
@@ -188,7 +189,7 @@ public class GameSystem : MonoBehaviour
         Transform playerTransform = Controller.Instance.transform;
         
         
-        //UI Update
+        //UI Update 
         MinimapUI.Instance.UpdateForPlayerTransform(playerTransform);
        
         if(FullscreenMap.Instance.gameObject.activeSelf)
