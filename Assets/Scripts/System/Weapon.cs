@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -15,7 +16,9 @@ public class Weapon : MonoBehaviour
     public enum TriggerType
     {
         Auto,
-        Manual
+        Manual,
+        Burst,
+        Choke,
     }
 
     public enum WeaponType
@@ -197,6 +200,117 @@ public class Weapon : MonoBehaviour
         m_Animator.SetTrigger("selected");
     }
 
+    public void FireChoke(int numShot)
+    {
+        
+        {
+            if (m_CurrentState != WeaponState.Idle || m_ShotTimer > 0 || m_ClipContent == 0)
+                return;
+        
+            m_ClipContent -= 1;
+        
+            m_ShotTimer = fireRate;
+
+            if(AmmoDisplay)
+                AmmoDisplay.UpdateAmount(m_ClipContent, clipSize);
+        
+            WeaponInfoUI.Instance.UpdateClipInfo(this);
+
+            //the state will only change next frame, so we set it right now.
+            m_CurrentState = WeaponState.Firing;
+        
+            m_Animator.SetTrigger("fire");
+
+            m_Source.pitch = Random.Range(0.7f, 1.0f);
+            m_Source.PlayOneShot(FireAudioClip);
+        
+            CameraShaker.Instance.Shake(0.2f, 0.05f * advancedSettings.screenShakeMultiplier);
+
+            if (weaponType == WeaponType.Raycast)
+            {
+                for (int i = 0; i < advancedSettings.projectilePerShot; ++i)
+                {
+                    for (int j = 0; j < numShot; j++)
+                    {
+                        RaycastShot();
+                    }
+                }
+            }
+            else
+            {
+                for (int j = 0; j < numShot; j++)
+                {
+                    ProjectileShot();
+                }
+            }
+        }
+    }
+    public void FireBurst(int numShot)
+    {
+        
+        {
+            if (m_CurrentState != WeaponState.Idle || m_ShotTimer > 0 || m_ClipContent == 0)
+                return;
+         
+            m_ClipContent -= numShot;
+        
+            m_ShotTimer = fireRate;
+
+            if(AmmoDisplay)
+                AmmoDisplay.UpdateAmount(m_ClipContent, clipSize);
+        
+            WeaponInfoUI.Instance.UpdateClipInfo(this);
+
+            //the state will only change next frame, so we set it right now.
+            m_CurrentState = WeaponState.Firing;
+        
+            m_Animator.SetTrigger("fire");
+
+            m_Source.pitch = Random.Range(0.6f, 0.8f);
+            m_Source.PlayOneShot(FireAudioClip);
+            CameraShaker.Instance.Shake(0.2f, 0.05f * advancedSettings.screenShakeMultiplier);
+
+            if (weaponType == WeaponType.Raycast)
+            {
+                for (int i = 0; i < advancedSettings.projectilePerShot; ++i)
+                {
+                    BurstWaitTime(numShot);
+                }
+            }
+            else
+            {
+               
+                BurstWaitTime(numShot);
+            }
+        }
+    }
+
+    public async void BurstWaitTime(int numShot)
+    {
+       
+        if (weaponType == WeaponType.Raycast)
+        {
+            for (int i = 0; i < advancedSettings.projectilePerShot; ++i)
+            {
+                for (int j = 0; j < numShot; j++)
+                {
+                    RaycastShot();
+                    if(j<numShot-1) await (Task.Delay(100));
+                }
+
+            }
+        }
+        else
+        {
+            for (int j = 0; j < numShot; j++)
+            {
+                ProjectileShot();
+                if(j<numShot-1) await (Task.Delay(100));
+            }
+
+        }
+
+    }
     public void Fire()
     {
         if (m_CurrentState != WeaponState.Idle || m_ShotTimer > 0 || m_ClipContent == 0)
@@ -408,8 +522,18 @@ public class Weapon : MonoBehaviour
                     Fire();
                 }
             }
-            else
+            else if (triggerType == TriggerType.Auto)
+            {
                 Fire();
+            }
+            else if (triggerType == TriggerType.Burst)
+            {
+              FireBurst(3);
+            }
+            else if (triggerType == TriggerType.Choke)
+            {
+                FireChoke(5);
+            }
         }
     }
     

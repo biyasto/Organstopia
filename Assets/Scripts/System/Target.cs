@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using Random = UnityEngine.Random;
 using Vector3 = UnityEngine.Vector3;
 
 public class Target : MonoBehaviour
@@ -14,7 +16,7 @@ public class Target : MonoBehaviour
     [Header("Audio")]
     public RandomPlayer HitPlayer;
     public AudioSource IdleSource;
-    
+    public Rigidbody rb;
     public bool Destroyed => m_Destroyed;
 
     bool m_Destroyed = false;
@@ -33,6 +35,12 @@ public class Target : MonoBehaviour
         m_CurrentHealth = health;
         if(IdleSource != null)
             IdleSource.time = Random.Range(0.0f, IdleSource.clip.length);
+        rb = GetComponent<Rigidbody>();
+    }
+
+    void FixedUpdate()
+    {
+        rb.AddForce(Vector3.up * 100);
     }
 
     public void Got(float damage)

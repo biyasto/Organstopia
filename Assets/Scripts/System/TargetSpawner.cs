@@ -22,7 +22,7 @@ public class TargetSpawner : MonoBehaviour
     
     public PathSystem path = new PathSystem();
     
-    class SpawnQueueElement
+    public class SpawnQueueElement
     {
         public GameObject obj;
         public Target target;
@@ -32,7 +32,7 @@ public class TargetSpawner : MonoBehaviour
     }
 
     Queue<SpawnQueueElement> m_SpawnQueue;
-    List<SpawnQueueElement> m_ActiveElements;
+    public List<SpawnQueueElement> m_ActiveElements;
     
     // Start is called before the first frame update
     void Awake()

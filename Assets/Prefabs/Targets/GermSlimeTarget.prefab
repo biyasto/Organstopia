@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 5949802199157995707}
   - component: {fileID: 7818527331259110205}
   m_Layer: 10
-  m_Name: GermSlime
+  m_Name: GermSlimeTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,6 +362,7 @@ MonoBehaviour:
     type: 3}
   HitPlayer: {fileID: 8212324151211496083}
   IdleSource: {fileID: 2512953057398773005}
+  rb: {fileID: 0}
 --- !u!1001 &2834995659269953124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -372,6 +373,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a148bf2bf5d309646bda1b56264c815e, type: 3}
       propertyPath: m_Name
       value: GermSlime
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a148bf2bf5d309646bda1b56264c815e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a148bf2bf5d309646bda1b56264c815e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -386,6 +391,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a148bf2bf5d309646bda1b56264c815e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a148bf2bf5d309646bda1b56264c815e, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -395,14 +404,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a148bf2bf5d309646bda1b56264c815e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a148bf2bf5d309646bda1b56264c815e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a148bf2bf5d309646bda1b56264c815e, type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a148bf2bf5d309646bda1b56264c815e, type: 3}

@@ -381,6 +381,7 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
      <Compile Include="Assets\Scripts\NFTConnect\CharacterToken.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandSystem\DefeatBlueEnemyCommand.cs" />
+     <Compile Include="Assets\Scripts\TriggerActionsSystem\TargetCheckerSpawner.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\UGSAssets\Common\UserReporting\Release Notes.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
