@@ -263,8 +263,6 @@ public class Weapon : MonoBehaviour
 
             //the state will only change next frame, so we set it right now.
             m_CurrentState = WeaponState.Firing;
-        
-            m_Animator.SetTrigger("fire");
 
             m_Source.pitch = Random.Range(0.6f, 0.8f);
             m_Source.PlayOneShot(FireAudioClip);
@@ -295,7 +293,7 @@ public class Weapon : MonoBehaviour
                 for (int j = 0; j < numShot; j++)
                 {
                     RaycastShot();
-                    if(j<numShot-1) await (Task.Delay(100));
+                    if(j<numShot-1) await (Task.Delay(80));
                 }
 
             }
@@ -309,6 +307,7 @@ public class Weapon : MonoBehaviour
             }
 
         }
+        m_Animator.SetTrigger("fire");
 
     }
     public void Fire()
@@ -419,6 +418,7 @@ public class Weapon : MonoBehaviour
 
     public void Reload()
     {
+        
         if (m_CurrentState != WeaponState.Idle || m_ClipContent == clipSize)
             return;
 
@@ -444,18 +444,27 @@ public class Weapon : MonoBehaviour
         //the state will only change next frame, so we set it right now.
         m_CurrentState = WeaponState.Reloading;
         
-        m_ClipContent += chargeInClip;
-        
-        if(AmmoDisplay)
-            AmmoDisplay.UpdateAmount(m_ClipContent, clipSize);
+        changeAmmoDelay(chargeInClip);
         
         m_Animator.SetTrigger("reload");
         
-        m_Owner.ChangeAmmo(ammoType, -chargeInClip);
-        
-        WeaponInfoUI.Instance.UpdateClipInfo(this);
+       
     }
 
+    async void changeAmmoDelay(int chargeInClip)
+    {
+        await (Task.Delay((int)(reloadTime*500)));
+        m_ClipContent += chargeInClip;
+        m_Owner.ChangeAmmo(ammoType, -chargeInClip);
+        if(AmmoDisplay)
+            AmmoDisplay.UpdateAmount(m_ClipContent, clipSize);
+        WeaponInfoUI.Instance.UpdateClipInfo(this);
+    }
+    async void ReloadDelay()
+    {
+        await (Task.Delay(200));
+        Reload();
+    }
     void Update()
     {
         UpdateControllerState();        
@@ -508,7 +517,8 @@ public class Weapon : MonoBehaviour
             if (oldState == WeaponState.Firing)
             {//we just finished firing, so check if we need to auto reload
                 if(m_ClipContent == 0)
-                    Reload();
+                    if(triggerType == TriggerType.Burst) ReloadDelay();
+                    else Reload();
             }
         }
 
