@@ -418,8 +418,8 @@ public class Weapon : MonoBehaviour
 
     public void Reload()
     {
-        
-        if (m_CurrentState != WeaponState.Idle || m_ClipContent == clipSize)
+        Debug.Log(m_ClipContent);
+        if (m_CurrentState != WeaponState.Idle || m_ClipContent >= clipSize)
             return;
 
         int remainingBullet = m_Owner.GetAmmo(ammoType);
@@ -440,22 +440,22 @@ public class Weapon : MonoBehaviour
         }
 
         int chargeInClip = Mathf.Min(remainingBullet, clipSize - m_ClipContent);
-     
+        m_ClipContent += chargeInClip;
+        m_Owner.ChangeAmmo(ammoType, -chargeInClip);
         //the state will only change next frame, so we set it right now.
         m_CurrentState = WeaponState.Reloading;
         
-        changeAmmoDelay(chargeInClip);
+        DelayUpdateAmmoChange();
         
         m_Animator.SetTrigger("reload");
         
        
     }
 
-    async void changeAmmoDelay(int chargeInClip)
+    async void DelayUpdateAmmoChange()
     {
         await (Task.Delay((int)(reloadTime*500)));
-        m_ClipContent += chargeInClip;
-        m_Owner.ChangeAmmo(ammoType, -chargeInClip);
+        
         if(AmmoDisplay)
             AmmoDisplay.UpdateAmount(m_ClipContent, clipSize);
         WeaponInfoUI.Instance.UpdateClipInfo(this);
