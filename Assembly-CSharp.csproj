@@ -101,7 +101,7 @@
      <Compile Include="Assets\SlimUI\Tech Menu\Scripts\UIManagerTech.cs" />
      <Compile Include="Assets\Scripts\LevelLayout\LevelRoomGroup.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
-     <Compile Include="Assets\Scripts\NFTConnect\CheckUnicellBalance.cs" />
+     <Compile Include="Assets\Scripts\NFTConnect\CheckPurifierBalance.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\VirtualShopManager.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\MessageListItemView.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSha3Example.cs" />
@@ -113,7 +113,7 @@
      <Compile Include="Assets\UGSAssets\Common\Scripts\CancellationTokenHelper.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\InventoryPopupView.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Cloud AI Mini Game\Scripts\CloudAIMiniGameSceneManager.cs" />
-     <Compile Include="Assets\Scripts\NFTConnect\CheckPieceBalance.cs" />
+     <Compile Include="Assets\Scripts\NFTConnect\CheckGermblasterBalance.cs" />
      <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportList.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer1155.cs" />
      <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\Version2018_3\Screenshots\ScreenshotManager.cs" />
@@ -269,7 +269,7 @@
      <Compile Include="Assets\Web3Unity\Prefabs\ERC1155\ImportNFTTextureExample.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CustomRPCExample.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\VirtualShopCategory.cs" />
-     <Compile Include="Assets\Scripts\NFTConnect\CheckFireBalance.cs" />
+     <Compile Include="Assets\Scripts\NFTConnect\CheckCurescatterBalance.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\CloudCodeManager.cs" />
      <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\UserReportingState.cs" />
      <Compile Include="Assets\Scripts\System\Projectile.cs" />
@@ -382,6 +382,7 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
      <Compile Include="Assets\Scripts\NFTConnect\CharacterToken.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandSystem\DefeatBlueEnemyCommand.cs" />
+     <Compile Include="Assets\Scripts\NFTConnect\CheckHealmaticBalance.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\UGSAssets\Common\UserReporting\Release Notes.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
