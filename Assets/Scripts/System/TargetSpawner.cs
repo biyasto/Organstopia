@@ -15,7 +15,7 @@ public class TargetSpawner : MonoBehaviour
         public int count;
         public float timeBetweenSpawn;
     }
-
+    
     public SpawnEvent[] spawnEvents;
     
     public float speed = 1.0f;

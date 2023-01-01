@@ -79,6 +79,7 @@
      <Compile Include="Assets\UGSAssets\Use Case Samples\Idle Clicker Game\Scripts\EconomyManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20DecimalsExample.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\InventoryPopupView.cs" />
+     <Compile Include="Assets\Scripts\NFTConnect\CheckHealmaticBalance.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Daily Rewards\Scripts\DailyRewardsEventManager.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\EconomyManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSendTransactionExample.cs" />
@@ -277,6 +278,7 @@
      <Compile Include="Assets\UGSAssets\Use Case Samples\Idle Clicker Game\Scripts\DataStructs.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Scripts\KeyLockSystem\Lock.cs" />
+     <Compile Include="Assets\Scripts\System\RespawnChecker.cs" />
      <Compile Include="Assets\Scripts\TriggerActionsSystem\EnableObjectAction.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySendTransactionExample.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\MessageView.cs" />
@@ -382,7 +384,6 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
      <Compile Include="Assets\Scripts\NFTConnect\CharacterToken.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandSystem\DefeatBlueEnemyCommand.cs" />
-     <Compile Include="Assets\Scripts\NFTConnect\CheckHealmaticBalance.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\UGSAssets\Common\UserReporting\Release Notes.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

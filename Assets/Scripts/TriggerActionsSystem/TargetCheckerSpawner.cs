@@ -14,13 +14,7 @@ public class TargetCheckerSpawner : GameTrigger
     public List<Target> targetsToCheck;
     public TargetSpawner targetSpawner;
     public bool ready = false;
-    /*void Start()
-    {
-        foreach (var target in targetSpawner.m_ActiveElements)
-        {
-            targetsToCheck.Add(target.target);
-        }
-    }*/
+   
     void Update()
     {
         //add target to check
@@ -43,9 +37,8 @@ public class TargetCheckerSpawner : GameTrigger
 
         if (allDone)
         {
-            
             Trigger();
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
