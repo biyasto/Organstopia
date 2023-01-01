@@ -4991,7 +4991,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218343934}
   m_LocalRotation: {x: -0, y: -0.80144745, z: -0, w: 0.5980653}
-  m_LocalPosition: {x: 11, y: 2.4305427, z: 1}
+  m_LocalPosition: {x: 5, y: 2.4305427, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2129670672}
@@ -5236,6 +5236,7 @@ MonoBehaviour:
   targetsToCheck: []
   targetSpawner: {fileID: 1285574081}
   ready: 0
+  Trigged: 0
 --- !u!114 &1289692494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8704,7 +8705,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129670671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.663874, y: 0, z: -13.863453}
+  m_LocalPosition: {x: 10.663874, y: 0, z: -13.863453}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2062638405}
@@ -8730,7 +8731,8 @@ MonoBehaviour:
   isRespawn: 0
   isComplete: 0
   pointValue: 15
-  respawnCheckTime: 0.4
+  respawnCheckTime: 0.3
+  respawnCheckTimer: 0
 --- !u!1001 &2136614602
 PrefabInstance:
   m_ObjectHideFlags: 0

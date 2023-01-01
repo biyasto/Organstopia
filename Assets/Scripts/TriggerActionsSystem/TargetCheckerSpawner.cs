@@ -14,7 +14,7 @@ public class TargetCheckerSpawner : GameTrigger
     public List<Target> targetsToCheck;
     public TargetSpawner targetSpawner;
     public bool ready = false;
-   
+    public bool Trigged = false;
     void Update()
     {
         //add target to check
@@ -37,7 +37,9 @@ public class TargetCheckerSpawner : GameTrigger
 
         if (allDone)
         {
-            Trigger();
+            if (Trigged) return;
+            Trigged = true; 
+            Trigger(); 
             //Destroy(gameObject);
         }
     }

@@ -20,11 +20,11 @@ namespace System
         [SerializeField] private int pointValue = 15;
         [SerializeField] float respawnCheckTime = 0.3f;
         
-        private float respawnCheckTimer = 0;
+        public float respawnCheckTimer = 0;
         private int CountTargetInit = 0;
         private void Start()
         {
-            respawnCheckTimer = respawnCheckTime;
+           // respawnCheckTimer = respawnCheckTime;
             CountTargetInit = targetsList.Count;
         }
         void Update()
@@ -53,11 +53,10 @@ namespace System
         {
             if (isComplete) return;
             
-            respawnCheckTimer -= Time.fixedDeltaTime;
-            if(respawnCheckTimer<=0)
-            {
-                //reset timer
-                respawnCheckTimer = respawnCheckTime;
+           if(isRespawn) respawnCheckTimer -= Time.fixedDeltaTime;
+           
+                
+                
                 
                 //check inactive targets
                 int countInactiveTarget = 0;
@@ -87,6 +86,8 @@ namespace System
 
                 if (!isComplete && isRespawn)
                 {
+                    if (respawnCheckTimer > 0) return;
+                    
                     foreach (var target in targetsList)
                     {
                         if (!target.gameObject.activeSelf)
@@ -95,7 +96,11 @@ namespace System
                         }
                     }
                 }
-            }
+
+                if (countInactiveTarget > 0 && !isComplete)
+                {
+                    if(respawnCheckTimer<=0) respawnCheckTimer = respawnCheckTime;
+                }
         }
     }
 }
