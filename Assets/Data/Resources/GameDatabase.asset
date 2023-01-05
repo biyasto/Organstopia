@@ -19,4 +19,21 @@ MonoBehaviour:
       id: 0
     - name: Pill
       id: 2
-  episodes: []
+  episodes:
+  - title: Episode
+    sceneAssets:
+    - {fileID: 102900000, guid: 7e3d004101f248f4aac2ae0420dd73d8, type: 3}
+    - {fileID: 102900000, guid: cf8af1738c3cb4b488b72c399f7898f8, type: 3}
+    scenes:
+    - Assets/Scenes/Level/Level1.unity
+    - Assets/Scenes/OGScene.unity
+  - title: Episode
+    sceneAssets:
+    - {fileID: 102900000, guid: 7e3d004101f248f4aac2ae0420dd73d8, type: 3}
+    scenes:
+    - Assets/Scenes/Level/Level1.unity
+  - title: Episode
+    sceneAssets:
+    - {fileID: 102900000, guid: cf8af1738c3cb4b488b72c399f7898f8, type: 3}
+    scenes:
+    - Assets/Scenes/OGScene.unity

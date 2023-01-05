@@ -89,6 +89,7 @@ namespace Unity.Services.Samples.VirtualShop
             await Task.WhenAll(addressablesLoadAsyncData.tasks);
             if (this == null) return;
 
+            
             // Iterate all Addressables loaded and save off the Sprites into our Dictionary.
             AddAddressablesSpritesToDictionary(addressablesLoadAsyncData, preloadedSpritesByAddress);
 

@@ -78,6 +78,8 @@ namespace Unity.Services.Samples.BattlePass
 
         void RefreshTierRewards(bool battlePassIsOwned)
         {
+            
+            
             var normalRewardDetail = m_BattlePassSceneManager.battlePassConfig.rewardsFree[m_TierIndex];
 
             if (!string.IsNullOrEmpty(normalRewardDetail.id))

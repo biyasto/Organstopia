@@ -18,13 +18,13 @@ namespace Unity.Services.Samples.BattlePass
         public GameObject battlePassNotOwnedPanel;
         public GameObject battlePassOwnedPanel;
         public Button buyBattlePassButton;
-        public Button playGameButton;
+       // public Button playGameButton;
 
         readonly List<TierView> m_TierViews = new List<TierView>();
 
         void Awake()
         {
-            playGameButton.interactable = false;
+//            playGameButton.interactable = false;
             battlePassNotOwnedPanel.SetActive(false);
             battlePassOwnedPanel.SetActive(false);
             seasonXpProgressBarPanel.SetActive(false);
@@ -34,7 +34,7 @@ namespace Unity.Services.Samples.BattlePass
 
         public void SetInteractable(bool isInteractable = true)
         {
-            playGameButton.interactable = isInteractable;
+           // playGameButton.interactable = isInteractable;
             buyBattlePassButton.interactable = isInteractable;
 
             foreach (var tierView in m_TierViews)

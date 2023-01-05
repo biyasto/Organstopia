@@ -259,6 +259,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20TotalSupplyExample.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\AddressablesLoadAsyncData.cs" />
+     <Compile Include="Assets\Scripts\InventorySceneManager.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\EconomyManager.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Starter Pack\Scripts\StarterPackSampleView.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSha3Example.cs" />
@@ -281,6 +282,7 @@
      <Compile Include="Assets\Scripts\System\RespawnChecker.cs" />
      <Compile Include="Assets\Scripts\TriggerActionsSystem\EnableObjectAction.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySendTransactionExample.cs" />
+     <Compile Include="Assets\Scripts\InspectObject.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\MessageView.cs" />
      <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\Views\InboxButtonView.cs" />
      <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\IUserReportingPlatform.cs" />
@@ -352,6 +354,7 @@
      <Compile Include="Assets\UGSAssets\Use Case Samples\In-Game Mailbox\Scripts\EconomyManager.cs" />
      <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\UserReportEventLevel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+     <Compile Include="Assets\Scripts\GunDisplayManager.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Battle Pass\Scripts\TierPopupView.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\UGSAssets\Common\Scripts\LoadSceneButton.cs" />

@@ -31,6 +31,7 @@ namespace Unity.Services.Samples.VirtualShop
             var cost = virtualShopItem.costs[0];
             var reward = virtualShopItem.rewards[0];
 
+           
             costIcon.sprite = addressablesManager.preloadedSpritesByEconomyId[cost.id];
             rewardIcon.sprite = addressablesManager.preloadedSpritesByEconomyId[reward.id];
 

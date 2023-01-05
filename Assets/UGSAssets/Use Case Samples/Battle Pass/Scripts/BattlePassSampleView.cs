@@ -7,16 +7,16 @@ namespace Unity.Services.Samples.BattlePass
     public class BattlePassSampleView : MonoBehaviour
     {
         public BattlePassView battlePassView;
-        public Button inventoryButton;
-        public Button gainGemsButton;
+       // public Button inventoryButton;
+       // public Button gainGemsButton;
         public MessagePopup messagePopup;
         public InventoryPopupView inventoryPopupView;
         public TextMeshProUGUI eventWelcomeText;
 
         public void SetInteractable(bool isInteractable)
         {
-            inventoryButton.interactable = isInteractable;
-            gainGemsButton.interactable = isInteractable;
+//            inventoryButton.interactable = isInteractable;
+//            gainGemsButton.interactable = isInteractable;
 
             battlePassView.SetInteractable(isInteractable);
         }

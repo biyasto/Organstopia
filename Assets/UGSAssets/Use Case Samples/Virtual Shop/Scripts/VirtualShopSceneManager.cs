@@ -118,10 +118,12 @@ namespace Unity.Services.Samples.VirtualShop
         {
             try
             {
-                await EconomyManager.instance.GrantDebugCurrency("GEM", 30);
+                await EconomyManager.instance.GrantDebugCurrency("GEM", 1);
+                await EconomyService.Instance.PlayerBalances.DecrementBalanceAsync("COIN", 1);
                 if (this == null) return;
 
                 await EconomyManager.instance.RefreshCurrencyBalances();
+                
             }
             catch (Exception e)
             {
