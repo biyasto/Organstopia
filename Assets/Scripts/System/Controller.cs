@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using NFTConnect;
 using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -29,6 +30,10 @@ public class Controller : MonoBehaviour
     //this is only use at start, allow to grant ammo in the inspector. m_AmmoInventory is used during gameplay
     public AmmoInventoryEntry[] startingAmmo;
 
+    [Header("NFT")] 
+    [SerializeField] public bool NFTCheck = true;
+    [SerializeField] public bool BulletCheck = false;
+    
     [Header("Control Settings")]
     public float MouseSensitivity = 100.0f;
     public float PlayerSpeed = 5.0f;
@@ -79,23 +84,50 @@ public class Controller : MonoBehaviour
         MainCamera.transform.localRotation = Quaternion.identity;
         m_CharacterController = GetComponent<CharacterController>();
 
-        for (int i = 0; i < startingWeapons.Length; ++i)
+        if (NFTCheck)
         {
-            PickupWeapon(startingWeapons[i]);
+            if (WeaponsOwnedData.GetEquipWeapon() >= 0)
+            {
+                PickupWeapon(startingWeapons[WeaponsOwnedData.GetEquipWeapon()+1]);
+            }
+
+            PickupWeapon(startingWeapons[0]);
+        }
+        else
+        {
+            for (int i = 0; i < startingWeapons.Length; ++i)
+            {
+                PickupWeapon(startingWeapons[i]);
+            }
         }
 
-        for (int i = 0; i < startingAmmo.Length; ++i)
+        if (BulletCheck)
         {
-            ChangeAmmo(startingAmmo[i].ammoType, startingAmmo[i].amount);
+                //gun ammo
+                int gunAmmoAmount = 10;
+                int pillAmmoAmount = 10;
+                
+                ChangeAmmo(startingAmmo[0].ammoType, (gunAmmoAmount-1)*startingWeapons[WeaponsOwnedData.GetEquipWeapon()+1].clipSize);
+
+                //incase no weapon equip
+                if (WeaponsOwnedData.GetEquipWeapon() >= 0) 
+                {
+                    ChangeAmmo(startingAmmo[1].ammoType, pillAmmoAmount-1);
+                }
+                
         }
-        
+        else 
+        {
+            for(int i = 0; i < startingAmmo.Length; ++i)
+            {
+                ChangeAmmo(startingAmmo[i].ammoType, startingAmmo[i].amount);
+            }
+        }
+
         m_CurrentWeapon = -1;
         ChangeWeapon(0);
 
-        for (int i = 0; i < startingAmmo.Length; ++i)
-        {
-            m_AmmoInventory[startingAmmo[i].ammoType] = startingAmmo[i].amount;
-        }
+        
 
         m_VerticalAngle = 0.0f;
         m_HorizontalAngle = transform.localEulerAngles.y;

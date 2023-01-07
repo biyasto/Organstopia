@@ -8,7 +8,7 @@ public class MenuSceneManager : MonoBehaviour
     // Start is called before the first frame update
     public void ChangeScene(string sceneName)
     {
-        SceneManager.LoadScene(name);
+        SceneManager.LoadScene(sceneName);
     }
 
     public void Exit()
@@ -18,6 +18,8 @@ public class MenuSceneManager : MonoBehaviour
 
     public void ChangePlayScene()
     {
-        SceneManager.LoadScene("ExampleScene");
+        SceneManager.LoadScene("Level1");
     }
+
+    
 }

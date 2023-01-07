@@ -6,22 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/UGSAssets/Use Case Samples/Battle Pass/BattlePassSample.unity
-    guid: 0bc50e3f9d3864455b80c5b1907454b8
+    path: Assets/Scenes/WalletLogin.unity
+    guid: cc28e1075e9584f1698219d041278648
   - enabled: 1
     path: Assets/Scenes/MenuScene.unity
     guid: bebc050756972234eb97d414dab7df66
   - enabled: 1
-    path: Assets/Scenes/WalletLogin.unity
-    guid: cc28e1075e9584f1698219d041278648
+    path: Assets/Scenes/Menu/Inventory.unity
+    guid: a8df5d290f428854ca1f1ab4c89b4d31
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 4ad1c08753cf6f04cb991f5c91a80e28
+    path: Assets/UGSAssets/Use Case Samples/Battle Pass/BattlePassSample.unity
+    guid: 0bc50e3f9d3864455b80c5b1907454b8
   - enabled: 1
-    path: Assets/Scenes/OGScene.unity
-    guid: cf8af1738c3cb4b488b72c399f7898f8
+    path: Assets/Scenes/Level/Level1.unity
+    guid: 7e3d004101f248f4aac2ae0420dd73d8
   - enabled: 1
-    path: Assets/UGSAssets/Use Case Samples/Virtual Shop/VirtualShopSample.unity
+    path: Assets/UGSAssets/Use Case Samples/Virtual Shop/VirtualShopScene.unity
     guid: c9e7248306bed8e439bdc5ef66ca4940
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 3013bd6f526638b4993e32815a58698a,

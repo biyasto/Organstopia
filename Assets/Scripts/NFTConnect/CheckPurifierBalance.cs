@@ -23,5 +23,6 @@ public class CheckPurifierBalance : MonoBehaviour
         {
             have = true;
         }
+    
     }
 }

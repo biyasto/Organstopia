@@ -25,5 +25,7 @@ public class CheckCurescatterBalance : MonoBehaviour
         {
             have = true;
         }
+
+      
     }
 }

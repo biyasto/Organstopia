@@ -342,7 +342,7 @@
      <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CloudSaveManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySend1155Example.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Library\ERC721.cs" />
-     <Compile Include="Assets\Scripts\NFTConnect\CharacterOwnedData.cs" />
+     <Compile Include="Assets\Scripts\NFTConnect\WeaponsOwnedData.cs" />
      <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\LicenseLevel.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignVerifyExample.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeyAddressExample.cs" />
@@ -387,6 +387,8 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
      <Compile Include="Assets\Scripts\NFTConnect\CharacterToken.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandSystem\DefeatBlueEnemyCommand.cs" />
+     <Compile Include="Assets\Scripts\DontDestroyMusic.cs" />
+     <Compile Include="Assets\Scripts\PopupTrigger.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\UGSAssets\Common\UserReporting\Release Notes.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

@@ -23,5 +23,6 @@ public class CheckHealmaticBalance : MonoBehaviour
         {
             have = true;
         }
+       
     }
 }

@@ -32,7 +32,7 @@ namespace Unity.Services.Samples
         void OnButtonClick()
         {
             LoadScene();
-            SelectReadmeFileOnProjectWindow();
+           // SelectReadmeFileOnProjectWindow();
         }
         
         void LoadScene()

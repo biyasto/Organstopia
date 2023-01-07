@@ -23,5 +23,6 @@ public class CheckGermblasterBalance : MonoBehaviour
         {
             have = true;
         }
+      
     }
 }

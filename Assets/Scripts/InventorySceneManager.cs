@@ -1,4 +1,5 @@
 using System;
+using NFTConnect;
 using Unity.Services.Authentication;
 using Unity.Services.Core;
 using UnityEngine;
@@ -6,9 +7,6 @@ namespace Unity.Services.Samples.LootBoxes
 {
     public class InventorySceneManager : MonoBehaviour
     {
-        //public LootBoxesSampleView sceneView;
-
-
         async void Start()
         {
             try
