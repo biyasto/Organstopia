@@ -104,8 +104,8 @@ public class Controller : MonoBehaviour
         if (BulletCheck)
         {
                 //gun ammo
-                int gunAmmoAmount = 10;
-                int pillAmmoAmount = 10;
+                int gunAmmoAmount = 5;
+                int pillAmmoAmount = 5;
                 
                 ChangeAmmo(startingAmmo[0].ammoType, (gunAmmoAmount-1)*startingWeapons[WeaponsOwnedData.GetEquipWeapon()+1].clipSize);
 

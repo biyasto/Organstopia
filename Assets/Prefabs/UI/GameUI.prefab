@@ -4903,7 +4903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edc045b833d95426ba3ca500b55b7d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: MenuScene
+  sceneName: SelectLevel
   readmeFile: {fileID: 0}
 --- !u!1 &8462715184311903221
 GameObject:
