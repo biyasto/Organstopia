@@ -136,6 +136,7 @@
      <Compile Include="Assets\UGSAssets\Common\Scripts\EditorAnalytics\ButtonEditorAnalytics.cs" />
      <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\AddressablesManager.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\CategoryButton.cs" />
+     <Compile Include="Assets\Scripts\PopupTrigger.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Over-The-Air Content\Scripts\OverTheAirContentSampleView.cs" />
      <Compile Include="Assets\Scripts\TriggerActionsSystem\TargetChecker.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
@@ -220,6 +221,7 @@
      <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Plugin\ILogListener.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Virtual Shop\Scripts\VirtualShopSampleView.cs" />
      <Compile Include="Assets\UGSAssets\Common\UserReporting\Scripts\Client\SerializableStackFrame.cs" />
+     <Compile Include="Assets\Scripts\DontDestroyMusic.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Cloud AI Mini Game\Scripts\DataStructs.cs" />
      <Compile Include="Assets\UGSAssets\Common\Project Inbox\Scripts\LocalSaveManager.cs" />
@@ -387,8 +389,6 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
      <Compile Include="Assets\Scripts\NFTConnect\CharacterToken.cs" />
      <Compile Include="Assets\UGSAssets\Use Case Samples\Command Batching\Scripts\CommandSystem\DefeatBlueEnemyCommand.cs" />
-     <Compile Include="Assets\Scripts\DontDestroyMusic.cs" />
-     <Compile Include="Assets\Scripts\PopupTrigger.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\UGSAssets\Common\UserReporting\Release Notes.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
