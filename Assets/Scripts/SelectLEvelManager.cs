@@ -10,10 +10,11 @@ namespace Unity.Services.Samples.LootBoxes
 {
     public class SelectLEvelManager : MonoBehaviour
     {
+        [SerializeField] private GameObject[] checkMark;
         public int indexSelect = 1;
         async void Start()
         {
-           
+           ChoseLevel(1);
             try
             {
                 await UnityServices.InitializeAsync();
@@ -68,9 +69,14 @@ namespace Unity.Services.Samples.LootBoxes
                 throw;
             }
         }
-        public void ChoseLevel(int i)
+        public void ChoseLevel(int _index)
         {
-            indexSelect = i;
+            indexSelect = _index;
+            for (int i = 0; i <= 4; i++)
+            {
+               checkMark[i].SetActive(i==_index-1);
+               
+            }
         }
 
     }

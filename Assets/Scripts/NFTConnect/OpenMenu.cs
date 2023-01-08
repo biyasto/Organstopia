@@ -11,13 +11,13 @@ public class OpenMenu : MonoBehaviour
 {
    // static public List<bool> WeaponOwn  = new List<bool>();
     bool[] weapons= new bool[4];
-    //public TextMeshProUGUI address;
+    public TextMeshProUGUI address;
     // Start is called before the first frame update
     
-    /*private void Start()
+    private void Start()
     {
         address.text = PlayerPrefs.GetString("Account");
-    }*/
+    }
 
     void  SaveData()
     {
