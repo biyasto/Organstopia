@@ -7,7 +7,3 @@
 </p>
 
 
-# Reminder: after init new brach
-Set up Unity Dashboard (UGS) connection
-
-Add Addresable asset package 
