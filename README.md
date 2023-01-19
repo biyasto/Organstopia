@@ -1,5 +1,5 @@
 # Organstopia
- FPS Game with CloudSave player progression and NFT weapon
+ FPS Game use NFT weapon
 
 
 <p align="center">
